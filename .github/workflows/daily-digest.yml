@@ -1,0 +1,30 @@
+name: Electrify America Daily Digest
+
+on:
+  schedule:
+    # 8 AM Eastern — UTC-4 (EDT) in summer, UTC-5 (EST) in winter
+    # Change to '0 13 * * *' November–March when clocks fall back
+    - cron: '0 12 * * 1-5'   # weekdays at 8 AM EDT
+  workflow_dispatch:           # also allows manual "Run workflow" button in GitHub
+
+jobs:
+  send-digest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic requests
+
+      - name: Run digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python digest.py
