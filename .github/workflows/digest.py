@@ -1,7 +1,8 @@
 import requests
 import xml.etree.ElementTree as ET
-import anthropic
 import smtplib
+import re
+import html
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.utils import parsedate_to_datetime
@@ -18,7 +19,6 @@ RECIPIENTS = [
     "emma@thinkjet.io",
 ]
 GMAIL_APP_PASSWORD = os.environ["GMAIL_APP_PASSWORD"]
-ANTHROPIC_API_KEY  = os.environ["ANTHROPIC_API_KEY"]
 
 RSS_FEEDS = [
     "https://electrek.co/feed/",
@@ -28,20 +28,58 @@ RSS_FEEDS = [
     "https://electrek.co/tag/electric-vehicle/feed/",
 ]
 
-STATE_KEYWORDS = [
-    "Massachusetts", "New Jersey", "New York", "Pennsylvania", "Maryland",
-    "Virginia", "Utah", "Colorado", "Texas", "Washington", "Illinois", "Ohio",
-    " MA ", " NJ ", " NY ", " PA ", " MD ", " VA ", " UT ", " CO ", " TX ", " WA ", " IL ", " OH ",
+STATES = {
+    "massachusetts": "MA",
+    "new jersey":    "NJ",
+    "new york":      "NY",
+    "pennsylvania":  "PA",
+    "maryland":      "MD",
+    "virginia":      "VA",
+    "utah":          "UT",
+    "colorado":      "CO",
+    "texas":         "TX",
+    "washington":    "WA",
+    "illinois":      "IL",
+    "ohio":          "OH",
+}
+
+STATE_ORDER = [
+    "Massachusetts", "New Jersey", "New York", "Pennsylvania",
+    "Maryland", "Virginia", "Utah", "Colorado",
+    "Texas", "Washington", "Illinois", "Ohio",
 ]
 
-POLICY_KEYWORDS = [
-    "nevi", "ev charging", "electrify america", "electric vehicle", "lcfs",
-    "charging station", "fast charge", "dcfc", "level 2", "evse",
-    "battery storage", "grid", "nec", "permit", "uptime", "registration fee",
+POLICY_AREAS = [
+    (["nevi", "national electric vehicle infrastructure"],          "EV Charging Funding / NEVI"),
+    (["ev charging fund", "charging grant", "charging investment",
+      "charging infrastructure fund"],                              "EV Charging Funding"),
+    (["low carbon fuel", "lcfs"],                                   "LCFS"),
+    (["kwh tax", "kilowatt-hour tax", "charging tax", "sales tax"], "kWh Tax"),
+    (["grid reliability", "interconnection", "demand charge",
+      "time-of-use", "utility commission"],                         "Grid Reliability"),
+    (["road use charge", "vmt fee", "vehicle miles traveled",
+      "mileage fee"],                                               "Road Use Charges"),
+    (["roi cap", "return on investment", "profit cap"],             "NEVI ROI Caps"),
+    (["evtip", "ev infrastructure training", "technician certif"],  "EVTIP"),
+    (["ada", "accessibility", "accessible"],                        "ADA Compliance"),
+    (["data sharing", "usage data", "charging data"],               "Data Sharing"),
+    (["uptime", "reliability report", "availability report"],       "Reliability & Uptime"),
+    (["vandal", "theft", "cable cut"],                              "Vandalism"),
+    (["parking requirement", "parking spaces", "parking code"],     "Parking % Requirements"),
+    (["registration fee", "ev fee", "ev surcharge"],                "EV Registration Fees"),
+    (["emergency stop", "nec code", "national electrical code"],    "Emergency Stop Button/NEC"),
+    (["permit", "permitting", "building code", "zoning"],           "Permit Expediting"),
+    (["battery storage", "fire safety", "fire code", "bess",
+      "energy storage"],                                            "Battery Storage/Fire Safety"),
+    (["electrify america"],                                         "EA Network"),
 ]
 
 
-# ── Helpers ────────────────────────────────────────────────────────────────────
+def strip_html(text: str) -> str:
+    text = re.sub(r"<[^>]+>", " ", text)
+    return html.unescape(text).strip()
+
+
 def fetch_rss(url: str) -> str | None:
     try:
         r = requests.get(url, timeout=20, headers={"User-Agent": "Mozilla/5.0"})
@@ -52,15 +90,30 @@ def fetch_rss(url: str) -> str | None:
         return None
 
 
+def detect_states(blob: str) -> list[str]:
+    found = []
+    for name in STATES:
+        if re.search(r'\b' + re.escape(name) + r'\b', blob):
+            found.append(name.title())
+    return found
+
+
+def detect_policy_area(blob: str) -> str:
+    for keywords, label in POLICY_AREAS:
+        if any(kw in blob for kw in keywords):
+            return label
+    return "EV Charging"
+
+
 def parse_recent_articles(xml_content: str, days: int = 7) -> list[dict]:
     articles = []
     cutoff = datetime.now(timezone.utc) - timedelta(days=days)
     try:
         root = ET.fromstring(xml_content)
         for item in root.findall(".//item"):
-            title        = item.findtext("title", "")
-            link         = item.findtext("link", "")
-            description  = item.findtext("description", "")
+            title        = strip_html(item.findtext("title", ""))
+            link         = item.findtext("link", "").strip()
+            description  = strip_html(item.findtext("description", ""))
             pub_date_str = item.findtext("pubDate", "")
 
             try:
@@ -73,78 +126,80 @@ def parse_recent_articles(xml_content: str, days: int = 7) -> list[dict]:
                 pass
 
             blob = f"{title} {description}".lower()
-            relevant = (
-                any(s.lower() in blob for s in STATE_KEYWORDS)
-                or any(k in blob for k in POLICY_KEYWORDS)
-            )
-            if relevant:
-                articles.append({
-                    "title":       title,
-                    "link":        link,
-                    "description": description[:600],
-                    "date":        pub_date_str,
-                })
+
+            states_found = detect_states(blob)
+            is_national = any(kw in blob for kw in [
+                "electrify america", "nevi", "federal", "fhwa", "doe ", "congress",
+                "nationwide", "national", "h.r.", "senate", "house bill",
+            ])
+
+            if not states_found and not is_national:
+                continue
+
+            policy_area = detect_policy_area(blob)
+            summary = description[:300].rstrip() + ("…" if len(description) > 300 else "")
+
+            articles.append({
+                "title":       title,
+                "link":        link,
+                "summary":     summary,
+                "states":      states_found,
+                "national":    is_national,
+                "policy_area": policy_area,
+                "date":        pub_date_str,
+            })
     except Exception as e:
         print(f"  WARNING: RSS parse error: {e}", file=sys.stderr)
     return articles
 
 
-def compose_digest(articles: list[dict], today: str) -> str:
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+def build_email_body(articles: list[dict], today: str) -> str:
+    by_state: dict[str, list[dict]] = {s: [] for s in STATE_ORDER}
+    national: list[dict] = []
 
-    if articles:
-        articles_text = "\n\n".join(
-            f"Title: {a['title']}\nURL: {a['link']}\nDate: {a['date']}\nSummary: {a['description']}"
-            for a in articles
-        )
+    for a in articles:
+        placed = False
+        for state in a["states"]:
+            if state in by_state:
+                by_state[state].append(a)
+                placed = True
+        if a["national"]:
+            national.append(a)
+
+    lines = [f"Team — here is your Electrify America policy and regulatory digest for {today}.", ""]
+
+    for state in STATE_ORDER:
+        items = by_state[state]
+        if items:
+            lines.append(f"{state.upper()} 🔴 ACTIVE")
+            for a in items:
+                note = ""
+                if a["policy_area"] == "Emergency Stop Button/NEC":
+                    note = " ⚠️ NOTE: EA's position is that emergency stop access should be for FIRST RESPONDERS ONLY."
+                if a["policy_area"] == "Battery Storage/Fire Safety" and state == "Texas":
+                    note = " ⚠️ HIGH PRIORITY"
+                lines.append(f"[{a['policy_area']}]{note} {a['title']}")
+                lines.append(f"  {a['summary']}")
+                lines.append(f"  Source: {a['link']}")
+        else:
+            lines.append(f"{state.upper()} — No significant developments today.")
+        lines.append("")
+
+    lines.append("NATIONAL")
+    if national:
+        for a in national:
+            lines.append(f"[{a['policy_area']}] {a['title']}")
+            lines.append(f"  {a['summary']}")
+            lines.append(f"  Source: {a['link']}")
     else:
-        articles_text = "No new articles found in RSS feeds today."
+        lines.append("No significant national developments today.")
+    lines.append("")
+    lines.append("—")
+    lines.append("Prepared by ThinkJet monitoring tools for Electrify America.")
+    lines.append("Policy areas monitored: EV Charging Funding, LCFS, kWh Tax, Grid Reliability, Road Use Charges, NEVI ROI Caps, EVTIP, ADA, Data Sharing, Reliability/Uptime, Vandalism, Parking %, EV Reg Fees, Emergency Stop Button/NEC, Permit Expediting, Battery Storage/Fire Safety.")
+    lines.append("States monitored: MA, NJ, NY, PA, MD, VA, UT, CO, TX, WA, IL, OH.")
 
-    prompt = f"""You are a policy monitoring assistant for ThinkJet, a government affairs consultancy.
-Today is {today}. Based on the articles below from EV news RSS feeds, compose a daily policy digest email for the team monitoring Electrify America.
-
-ARTICLES:
-{articles_text}
-
-STATES TO COVER (include every state, even with no news):
-Massachusetts (MA), New Jersey (NJ), New York (NY), Pennsylvania (PA), Maryland (MD),
-Virginia (VA), Utah (UT), Colorado (CO), Texas (TX), Washington (WA), Illinois (IL), Ohio (OH)
-
-16 POLICY AREAS — tag each finding with the relevant area:
-1. EV Charging Funding  2. LCFS  3. kWh Tax  4. Grid Reliability  5. Road Use Charges
-6. NEVI ROI Caps  7. EVTIP  8. ADA Compliance  9. Data Sharing  10. Reliability & Uptime
-11. Vandalism  12. Parking % Requirements  13. EV Registration Fees
-14. Emergency Stop Button/NEC  — EA position: first responder access ONLY; flag with extra detail
-15. Permit Expediting  16. Battery Storage/Fire Safety  — flag Texas items as ⚠️ HIGH PRIORITY
-
-FORMAT (plain text, no markdown):
-
-Team — here is your Electrify America policy and regulatory digest for {today}.
-
-[For each state WITH findings:]
-[STATE NAME] 🔴 ACTIVE
-[Policy Area Tag] [1-2 sentence summary.]
-Source: [URL]
-
-[For each state with NO findings:]
-[STATE NAME] — No significant developments today.
-
-NATIONAL
-[National/federal items, or "No significant national developments today."]
-
-—
-Prepared by ThinkJet monitoring tools for Electrify America.
-Policy areas monitored: EV Charging Funding, LCFS, kWh Tax, Grid Reliability, Road Use Charges, NEVI ROI Caps, EVTIP, ADA, Data Sharing, Reliability/Uptime, Vandalism, Parking %, EV Reg Fees, Emergency Stop Button/NEC, Permit Expediting, Battery Storage/Fire Safety.
-States monitored: MA, NJ, NY, PA, MD, VA, UT, CO, TX, WA, IL, OH.
-
-Return ONLY the email body. Start with "Team —"."""
-
-    msg = client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=2048,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    return msg.content[0].text
+    return "\n".join(lines)
 
 
 def send_email(subject: str, body: str) -> None:
@@ -160,7 +215,6 @@ def send_email(subject: str, body: str) -> None:
     print("✓ Email sent successfully.")
 
 
-# ── Main ───────────────────────────────────────────────────────────────────────
 def main():
     today = datetime.now().strftime("%B %-d, %Y")
     print(f"Running digest for {today}...")
@@ -177,7 +231,7 @@ def main():
     unique = [a for a in all_articles if not (a["link"] in seen or seen.add(a["link"]))]
     print(f"Total unique articles: {len(unique)}")
 
-    body    = compose_digest(unique, today)
+    body    = build_email_body(unique, today)
     subject = f"Electrify America Policy & Regulatory Digest — {today}"
 
     send_email(subject, body)
