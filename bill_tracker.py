@@ -303,7 +303,7 @@ def scan_state_bills(state_store: dict) -> tuple[list[dict], list[dict]]:
                 "jurisdiction": state_name,
                 "latest_action": latest_desc,
                 "latest_date": latest_date,
-                "url": (bill.get("sources") or [{}])[0].get("url", ""),
+                "url": bill.get("openstates_url") or (bill.get("sources") or [{}])[0].get("url", ""),
             }
 
             prior = state_store.get(bill_id)
