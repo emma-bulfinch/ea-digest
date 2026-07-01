@@ -108,7 +108,7 @@ def openstates_recent(jurisdiction: str, per_page: int = 20) -> list[dict]:
     params = {
         "jurisdiction": jurisdiction,
         "sort": "updated_desc",
-        "include": "actions,abstracts",
+        "include": "actions",
         "per_page": per_page,
         "apikey": OPENSTATES_API_KEY,
     }
