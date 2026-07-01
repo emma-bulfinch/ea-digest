@@ -1,1 +1,2954 @@
-{}
+{
+  "ocd-bill/022899d4-a9ad-4c83-a23d-c7a1e8170f2f": {
+    "identifier": "HB 121",
+    "jurisdiction": "Maryland",
+    "latest_action": "Enacted under Article II, Section 17(c) of the Maryland Constitution - Chapter 66",
+    "latest_date": "2020-05-08",
+    "title": "St. Mary\u2019s County \u2013 Metropolitan Commission \u2013 Collection of Fees, Assessments, and Nonsubstantive and Clarifying Revisions",
+    "url": ""
+  },
+  "ocd-bill/02d4b4a5-b3ff-4e6a-af49-9a28a3406dfe": {
+    "identifier": "S 541",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Bill reported favorably by committee and referred to the committee on Senate Ways and Means",
+    "latest_date": "2025-12-31",
+    "title": "An Act modernizing the Massachusetts emergency management system",
+    "url": ""
+  },
+  "ocd-bill/03014787-f858-42a0-933b-3786ee9b37bc": {
+    "identifier": "SB 1030",
+    "jurisdiction": "Maryland",
+    "latest_action": "Unfavorable Report by Education, Health, and Environmental Affairs; Withdrawn",
+    "latest_date": "2018-03-08",
+    "title": "Off\u2013Highway Recreational Vehicle Fund \u2013 Establishment",
+    "url": ""
+  },
+  "ocd-bill/03cf99f0-99e5-47af-965b-5205a11a9290": {
+    "identifier": "HB 4908",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to Ways & Means",
+    "latest_date": "2025-04-03",
+    "title": "Relating to the establishment of the Texas prosperity payout fund; imposing taxes on the gross revenues of and consumption by certain industry participants; authorizing administrative penalties.",
+    "url": ""
+  },
+  "ocd-bill/045bfd64-fa68-4d04-a67d-e64dfb885c98": {
+    "identifier": "S 2529",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Reprinted as amended, see S2540",
+    "latest_date": "2025-06-18",
+    "title": "An Act making appropriations for the fiscal year 2025 to provide for supplementing certain existing appropriations and for certain other activities and projects.",
+    "url": ""
+  },
+  "ocd-bill/046d72c7-5ea1-4256-aa6d-c40939d41abd": {
+    "identifier": "S 2850",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "See H4726",
+    "latest_date": "2024-06-27",
+    "title": "Amendment S.2850",
+    "url": ""
+  },
+  "ocd-bill/04fce318-4e99-4ec3-b987-0a1f870801f5": {
+    "identifier": "SB 766",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on 9/1/25",
+    "latest_date": "2025-06-20",
+    "title": "Relating to the correction of references to the Texas Natural Resource Conservation Commission.",
+    "url": ""
+  },
+  "ocd-bill/0538bbaf-bf83-49ae-ae66-32a6f21eefad": {
+    "identifier": "H 4804",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied H5100",
+    "latest_date": "2024-11-13",
+    "title": "An Act relative to strengthening Massachusetts\u2019 economic leadership",
+    "url": ""
+  },
+  "ocd-bill/060cb44e-635a-434c-810c-0da0be21c29a": {
+    "identifier": "HB 3596",
+    "jurisdiction": "Illinois",
+    "latest_action": "Added Co-Sponsor Rep. La Shawn K. Ford",
+    "latest_date": "2026-05-15",
+    "title": "WETLANDS PROTECTION ACT",
+    "url": ""
+  },
+  "ocd-bill/06b0f3ba-8b3f-4de2-b360-3bfef14cc390": {
+    "identifier": "HB 351",
+    "jurisdiction": "Maryland",
+    "latest_action": "First Reading Appropriations",
+    "latest_date": "2024-01-17",
+    "title": "Creation of a State Debt - Maryland Consolidated Capital Bond Loan of 2024, and the Maryland Consolidated Capital Bond Loans of 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, and 2023",
+    "url": ""
+  },
+  "ocd-bill/07c3a134-ae8b-4256-a8c6-cbe1ecca25be": {
+    "identifier": "S 2151",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Ought NOT to pass (under Joint Rule 10) and placed in the Orders of the Day for the next session",
+    "latest_date": "2022-08-08",
+    "title": "An Act promoting zero-emission vehicles",
+    "url": ""
+  },
+  "ocd-bill/07cfe080-cc02-438a-bf45-a3fceec58f3a": {
+    "identifier": "HB 3418",
+    "jurisdiction": "Texas",
+    "latest_action": "Left pending in committee",
+    "latest_date": "2023-05-17",
+    "title": "Relating to the implementation by the Texas Department of Transportation of a vehicle mileage user fee pilot program and a task force to assist in developing and evaluating the program.",
+    "url": ""
+  },
+  "ocd-bill/07faebc3-4459-4169-81a3-4660d992b024": {
+    "identifier": "HB 776",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-03-25T04:00:00+00:00",
+    "title": "Regards motorcycle lane filtering and lane splitting",
+    "url": ""
+  },
+  "ocd-bill/08681682-2d44-4374-96fa-595081586e8b": {
+    "identifier": "HB 1427",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 3/25 at 1:00 p.m.",
+    "latest_date": "2025-03-18",
+    "title": "Maryland Zero Emission Electric Vehicle Infrastructure Council - Revisions",
+    "url": ""
+  },
+  "ocd-bill/094105d5-54bf-4bfe-83ee-19f52da50314": {
+    "identifier": "SD 1999",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "",
+    "latest_date": "",
+    "title": "An Act closing a corporate tax haven loophole",
+    "url": ""
+  },
+  "ocd-bill/0ab2715b-cf5f-4c2b-87d8-56f619c33a3e": {
+    "identifier": "H 4789",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Published as amended, see H4804",
+    "latest_date": "2024-06-27",
+    "title": "An Act relative to strengthening Massachusetts\u2019 economic leadership",
+    "url": ""
+  },
+  "ocd-bill/0b3636ab-774c-479f-9a65-ee78a08bb00e": {
+    "identifier": "HD 4969",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Placed on file",
+    "latest_date": "2024-03-14",
+    "title": "The annual report of the Office of the Secretary of the Commonwealth (under Section 6A of Chapter 66 of the General Laws) submitting a report regarding public records requests for calendar year 2023",
+    "url": ""
+  },
+  "ocd-bill/0b3989dc-bb6d-440b-895b-f54cacb36896": {
+    "identifier": "SB 446",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-06-02T04:00:00+00:00",
+    "title": "Enact the Airspace Protection Act",
+    "url": ""
+  },
+  "ocd-bill/0c06015f-6c27-4204-9944-c3530d4b6e6f": {
+    "identifier": "HB 775",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-03-25T04:00:00+00:00",
+    "title": "Regards state agencies' authority to adopt administrative rules",
+    "url": ""
+  },
+  "ocd-bill/0c61e3bd-56fc-453c-9649-70b523704e71": {
+    "identifier": "S 2834",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "See S2819",
+    "latest_date": "2022-04-14",
+    "title": "Amendment S.2834",
+    "url": ""
+  },
+  "ocd-bill/0cbe77da-bb29-4269-911a-007b8ebb3470": {
+    "identifier": "SB 1010",
+    "jurisdiction": "Maryland",
+    "latest_action": "Enacted under Article II, Section 17(c) of the Maryland Constitution - Chapter 592",
+    "latest_date": "2020-05-08",
+    "title": "Public Safety - Maryland Code of Military Justice",
+    "url": ""
+  },
+  "ocd-bill/0cfbae0b-0152-482e-a25e-a3945ddc9db9": {
+    "identifier": "HB 798",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-05-13T04:00:00+00:00",
+    "title": "Enact the Privacy Protection Act",
+    "url": ""
+  },
+  "ocd-bill/0ed4aecc-856f-4f43-9c6d-bc1123c6bd46": {
+    "identifier": "HD 6185",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Placed on file",
+    "latest_date": "2026-06-15",
+    "title": "A communication from the Pension Reserves Investment Management Board (see Section 23(2A)(e)(xi) of Chapter 32 of the General Laws) submitting its fiscal year 2026 first quarterly report",
+    "url": ""
+  },
+  "ocd-bill/0fe55b90-8ab7-4840-9db4-1cc331917577": {
+    "identifier": "HB 951",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-05-27T04:00:00+00:00",
+    "title": "Exclude semitrailers from the Motor Vehicle Sales Law",
+    "url": ""
+  },
+  "ocd-bill/10350169-a451-46e8-ba20-3e85439dff44": {
+    "identifier": "SB 206",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 1/28 at 11:00 a.m.",
+    "latest_date": "2026-01-13",
+    "title": "Prince George's County - Speed Monitoring Systems - Maryland Route 210 - Penalties",
+    "url": ""
+  },
+  "ocd-bill/109bed00-dc9c-455e-93c4-5a2a00334061": {
+    "identifier": "H 5151",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Published as amended, see H5175",
+    "latest_date": "2026-02-26",
+    "title": "An Act relative to energy affordability, clean power and economic competitiveness",
+    "url": ""
+  },
+  "ocd-bill/116d6275-8650-4899-91f9-dac168755b66": {
+    "identifier": "SD 3691",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Placed on file",
+    "latest_date": "2026-02-19",
+    "title": "Secretary of the Commonwealth 2025 Agency Public Records Request Report",
+    "url": ""
+  },
+  "ocd-bill/11b9d245-66e4-4871-b235-558380e90b71": {
+    "identifier": "HB 897",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/20 at 1:00 p.m.",
+    "latest_date": "2025-01-31",
+    "title": "Maryland Department of Transportation - Electric Vehicle Charging Infrastructure Expansion - Plans and Programs",
+    "url": ""
+  },
+  "ocd-bill/12b9c59f-0cb7-4d22-9a31-fe420ffe2d29": {
+    "identifier": "HB 433",
+    "jurisdiction": "Ohio",
+    "latest_action": "Passed",
+    "latest_date": "2026-06-10T04:00:00+00:00",
+    "title": "Alter amusement ride classification for inspection fee purposes",
+    "url": ""
+  },
+  "ocd-bill/132e07cf-a615-4119-b179-1384646b19f3": {
+    "identifier": "HR 875",
+    "jurisdiction": "Texas",
+    "latest_action": "Reported enrolled",
+    "latest_date": "2025-05-23",
+    "title": "Congratulating Chief Petty Officer Eric B. Uhr on his retirement from the U.S. Coast Guard.",
+    "url": ""
+  },
+  "ocd-bill/13949539-edc4-43db-b00b-f3da8075c037": {
+    "identifier": "SB 1",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 537",
+    "latest_date": "2024-05-09",
+    "title": "Electricity and Gas - Retail Supply - Regulation and Consumer Protection",
+    "url": ""
+  },
+  "ocd-bill/14fabd1a-8a87-4edc-8dc1-2b80a8cc69d0": {
+    "identifier": "H 5065",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Referred to the committee on House Ways and Means",
+    "latest_date": "2022-08-08",
+    "title": "An Act financing the general governmental infrastructure of the Commonwealth",
+    "url": ""
+  },
+  "ocd-bill/15dfd8e2-906d-4583-9a13-6583d3b8c82b": {
+    "identifier": "HB 5568",
+    "jurisdiction": "Texas",
+    "latest_action": "Placed on General State Calendar",
+    "latest_date": "2025-05-15",
+    "title": "Relating to the authority of the Railroad Commission of Texas to designate certain persons as the operator of an orphaned oil or gas well.",
+    "url": ""
+  },
+  "ocd-bill/18bd747a-f308-4bfd-9e20-bb9a2af41de7": {
+    "identifier": "SD 3941",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Placed on file",
+    "latest_date": "2026-06-01",
+    "title": "PRIM Board First Quarter FY2026 Report",
+    "url": ""
+  },
+  "ocd-bill/1a0d6457-7349-459e-99e6-c9a35f45ad60": {
+    "identifier": "HB 1557",
+    "jurisdiction": "Maryland",
+    "latest_action": "Referred Rules and Executive Nominations",
+    "latest_date": "2025-03-26",
+    "title": "Program to Protect Individuals Unemployed or Furloughed Due to Federal Actions - Establishment",
+    "url": ""
+  },
+  "ocd-bill/1af811d4-b33d-45a3-9604-5a177158a36d": {
+    "identifier": "HB 279",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2025-05-21T04:00:00+00:00",
+    "title": "Authorize an income tax credit for family caregiving expenses",
+    "url": ""
+  },
+  "ocd-bill/1c03c4e6-a939-47b8-9432-686bbca5ed01": {
+    "identifier": "HB 2838",
+    "jurisdiction": "Texas",
+    "latest_action": "Left pending in subcommittee",
+    "latest_date": "2025-05-02",
+    "title": "Relating to increasing access to and reducing taxation of Internet services.",
+    "url": ""
+  },
+  "ocd-bill/1c66cf4d-6f14-41a0-b51f-c99c79e46b63": {
+    "identifier": "SB 24",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 92",
+    "latest_date": "2026-04-14",
+    "title": "State Emergency Medical Services Board - Public Access Automated External Defibrillator Program - Revisions",
+    "url": ""
+  },
+  "ocd-bill/1c7a3f82-4355-4ef1-93bf-eefa32fea1c6": {
+    "identifier": "S 1925",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see S3130",
+    "latest_date": "2026-06-18",
+    "title": "An Act imposing an in-state mileage-based road usage charge on the use of clean energy vehicles",
+    "url": ""
+  },
+  "ocd-bill/1d3f5220-ef75-4306-8eae-fdd305d05b28": {
+    "identifier": "H 4144",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5324",
+    "latest_date": "2026-04-06",
+    "title": "An Act relative to energy affordability, independence and innovation",
+    "url": ""
+  },
+  "ocd-bill/1e299512-0b11-46e2-8a0f-529aed683e8e": {
+    "identifier": "HB 3228",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on 9/1/25",
+    "latest_date": "2025-06-20",
+    "title": "Relating to the inclusion of certain provisions in lease agreements for wind or solar power facilities.",
+    "url": ""
+  },
+  "ocd-bill/1e9430f8-d9e0-4204-b526-cb75537daba0": {
+    "identifier": "HB 301",
+    "jurisdiction": "Maryland",
+    "latest_action": "First Reading Appropriations",
+    "latest_date": "2022-01-19",
+    "title": "Creation of a State Debt - Maryland Consolidated Capital Bond Loan of 2022, and the Maryland Consolidated Capital Bond Loans of 2014, 2015, 2016, 2017, 2018, 2019, 2020, and 2021",
+    "url": ""
+  },
+  "ocd-bill/1ee55a76-1bcf-49c0-b15f-873cbd43524b": {
+    "identifier": "HB 5673",
+    "jurisdiction": "Texas",
+    "latest_action": "Laid on the table subject to call",
+    "latest_date": "2025-05-15",
+    "title": "Relating to the creation of La Cima Municipal Management District No. 1; providing authority to issue bonds; providing authority to impose assessments, fees, and taxes; granting a limited power of eminent domain.",
+    "url": ""
+  },
+  "ocd-bill/201a4306-ae4b-4594-8800-ff6b1d14dc0f": {
+    "identifier": "HB 3",
+    "jurisdiction": "Ohio",
+    "latest_action": "Reported - Substitute",
+    "latest_date": "2026-06-10T04:00:00+00:00",
+    "title": "Enact the School Bus Safety Act",
+    "url": ""
+  },
+  "ocd-bill/2164af66-3542-4684-af10-2b76f0e4f97a": {
+    "identifier": "SB 388",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to State Affairs",
+    "latest_date": "2025-04-22",
+    "title": "Relating to the legislature's goals for electric generation capacity in this state.",
+    "url": ""
+  },
+  "ocd-bill/21ae7322-7a40-4256-9adf-3117cd8e5efd": {
+    "identifier": "HB 276",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 91",
+    "latest_date": "2026-04-14",
+    "title": "State Emergency Medical Services Board - Public Access Automated External Defibrillator Program - Revisions",
+    "url": ""
+  },
+  "ocd-bill/21fe174a-767e-4ce9-b205-10cb708b46ce": {
+    "identifier": "H 3372",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5042",
+    "latest_date": "2022-08-29",
+    "title": "An Act investing in a prosperous, clean Commonwealth by 2030",
+    "url": ""
+  },
+  "ocd-bill/22794a7a-8c76-472a-9605-21487586ffb4": {
+    "identifier": "HB 1150",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 757",
+    "latest_date": "2017-05-25",
+    "title": "Vehicle Laws - Off-Highway Recreational Vehicles",
+    "url": ""
+  },
+  "ocd-bill/22836d5b-531f-43f0-af95-a3bd3dd1bd6c": {
+    "identifier": "H 4689",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5323",
+    "latest_date": "2026-04-06",
+    "title": "An Act establishing buffer zones for battery storage facilities",
+    "url": ""
+  },
+  "ocd-bill/2344a69f-12d1-4c75-b01a-b4fa4af982d8": {
+    "identifier": "SB 2375",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to Judiciary & Civil Jurisprudence",
+    "latest_date": "2025-05-02",
+    "title": "Relating to nonsubstantive additions to, revisions of, and corrections in enacted codes, to the nonsubstantive codification or disposition of various laws omitted from enacted codes, and to conforming codifications enacted by the 88th Legislature to other Acts of that legislature.",
+    "url": ""
+  },
+  "ocd-bill/23d3dee8-2b09-48bb-9ff8-55c11bd783f1": {
+    "identifier": "HD 2581",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "",
+    "latest_date": "",
+    "title": "An Act relative to increasing voting opportunities in Massachusetts",
+    "url": ""
+  },
+  "ocd-bill/247801f8-9c05-42ab-a1af-7498188367b1": {
+    "identifier": "S 189",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a new draft, see S3062",
+    "latest_date": "2026-04-23",
+    "title": "An Act relative to digital right to repair",
+    "url": ""
+  },
+  "ocd-bill/250470f5-8c6c-435b-876c-8e82374329a7": {
+    "identifier": "S 3014",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "See S2989",
+    "latest_date": "2022-07-14",
+    "title": "Amendment S.3014",
+    "url": ""
+  },
+  "ocd-bill/2513f36d-5c6e-46e1-8ad3-0e77e8c11b39": {
+    "identifier": "H 4132",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Reported, in part, by H4246",
+    "latest_date": "2019-12-11",
+    "title": "An Act making appropriations for the fiscal year 2019 to provide for supplementing certain existing appropriations and for certain other activities and projects",
+    "url": ""
+  },
+  "ocd-bill/2533fc65-2687-40bf-b1e4-5a014feec1f4": {
+    "identifier": "SB 987",
+    "jurisdiction": "Maryland",
+    "latest_action": "Unfavorable Report by Judicial Proceedings",
+    "latest_date": "2019-03-21",
+    "title": "Public Safety - Building Codes - Electric Vehicle Charging Infrastructure",
+    "url": ""
+  },
+  "ocd-bill/25d10f4b-aa74-4dae-8c49-c9c9fb2b6aa9": {
+    "identifier": "HB 229",
+    "jurisdiction": "Texas",
+    "latest_action": "Filed",
+    "latest_date": "2025-07-30",
+    "title": "Relating to the Texas Flood Recovery, Reimbursement, and Reconstruction Program; authorizing a civil penalty.",
+    "url": ""
+  },
+  "ocd-bill/26a3c0b6-9a97-4bff-9ce6-68e250bd4acc": {
+    "identifier": "SB 2111",
+    "jurisdiction": "Texas",
+    "latest_action": "Vetoed by the Governor",
+    "latest_date": "2025-06-22",
+    "title": "Relating to legal representation of indigent persons in this state and to proceedings before a magistrate including the appointment of counsel for an indigent defendant.",
+    "url": ""
+  },
+  "ocd-bill/26ea1b1d-45c9-49fa-af89-674c53946112": {
+    "identifier": "HB 677",
+    "jurisdiction": "Ohio",
+    "latest_action": "Reported - Re-referred to Judiciary",
+    "latest_date": "2026-06-10T04:00:00+00:00",
+    "title": "Regards custody interference, missing children, certain call data",
+    "url": ""
+  },
+  "ocd-bill/2732b237-92b0-4511-9600-72673dac5138": {
+    "identifier": "SB 367",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-03-04T05:00:00+00:00",
+    "title": "Allow a sales and use tax exemption for certain projects",
+    "url": ""
+  },
+  "ocd-bill/27950fde-8eaf-47a7-8edf-cc0c82300535": {
+    "identifier": "HB 5081",
+    "jurisdiction": "Illinois",
+    "latest_action": "Sent to the Governor",
+    "latest_date": "2026-06-26",
+    "title": "VEH CD-ALTER SPEED LIMITS",
+    "url": ""
+  },
+  "ocd-bill/28cb95ea-cd51-4f35-a1f4-6b88dd031448": {
+    "identifier": "HB 3868",
+    "jurisdiction": "Texas",
+    "latest_action": "Placed on General State Calendar",
+    "latest_date": "2025-05-15",
+    "title": "Relating to programs established and funded under the Texas emissions reduction plan.",
+    "url": ""
+  },
+  "ocd-bill/2aebf057-5205-4f44-a99a-d96efdef0600": {
+    "identifier": "SB 54",
+    "jurisdiction": "Texas",
+    "latest_action": "Filed",
+    "latest_date": "2025-07-30",
+    "title": "Relating to the regulation of the cultivation, manufacture, processing, distribution, sale, testing, transportation, delivery, transfer, possession, use, and taxation of cannabis and cannabis products and the local regulation of licensed cannabis growers, cannabis establishments, cannabis testing facilities, and cannabis secure transporters; providing for expunction of records relating to certain decriminalized conduct; authorizing the imposition of fees; requiring an occupational license; creating a criminal offense; imposing a tax.",
+    "url": ""
+  },
+  "ocd-bill/2af46586-6c7b-4c32-995e-4e1fc001bfbf": {
+    "identifier": "HB 1526",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 2",
+    "latest_date": "2024-04-09",
+    "title": "Maryland Protecting Opportunities and Regional Trade (PORT) Act",
+    "url": ""
+  },
+  "ocd-bill/2b38ba38-a073-403a-b0df-1b43a4d5fbaa": {
+    "identifier": "HB 391",
+    "jurisdiction": "Maryland",
+    "latest_action": "First Reading Appropriations",
+    "latest_date": "2026-01-21",
+    "title": "Creation of a State Debt \u2013 Maryland Consolidated Capital Bond Loan of 2026, and the Maryland Consolidated Capital Bond Loans of 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, and 2025",
+    "url": ""
+  },
+  "ocd-bill/2c3fb47c-d4f5-46eb-b7c1-24515b4236e3": {
+    "identifier": "HD 4699",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Referred to the committee on House Rules",
+    "latest_date": "2023-11-29",
+    "title": "An Act relating to access to motor vehicle data by the owner or designee of a motor vehicle",
+    "url": ""
+  },
+  "ocd-bill/2c60dcb8-1e4c-4f85-b901-049db1b5e758": {
+    "identifier": "HD 4707",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Read; and referred to the committee on Telecommunications, Utilities and Energy",
+    "latest_date": "2025-05-15",
+    "title": "An Act relative to energy affordability, independence and innovation",
+    "url": ""
+  },
+  "ocd-bill/2d62f326-441c-4479-95ed-845bc6bf07f6": {
+    "identifier": "HJR 164",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to Ways & Means",
+    "latest_date": "2025-03-26",
+    "title": "Proposing a constitutional amendment prohibiting the imposition of a vehicle mileage tax or fee.",
+    "url": ""
+  },
+  "ocd-bill/2de2b36b-1c16-4783-a42d-4d08aa0d2e61": {
+    "identifier": "SB 133",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "USE TAX-MILITARY-VEHICLES",
+    "url": ""
+  },
+  "ocd-bill/2e6aad40-b866-447b-b557-e4986b71b2a8": {
+    "identifier": "H 3554",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5323",
+    "latest_date": "2026-04-06",
+    "title": "An Act achieving a green future with infrastructure and workforce investments",
+    "url": ""
+  },
+  "ocd-bill/2ea63085-a5fd-4d05-b311-fd92357f31df": {
+    "identifier": "SB 257",
+    "jurisdiction": "Ohio",
+    "latest_action": "Refer to Committee",
+    "latest_date": "2020-01-22",
+    "title": "Authorize tax incentives for plug-in electric cars",
+    "url": ""
+  },
+  "ocd-bill/2efddc39-bf43-416b-89f3-40192db8b7b9": {
+    "identifier": "HB 451",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 540",
+    "latest_date": "2026-05-12",
+    "title": "Maryland Zero Emission Electric Vehicle Infrastructure Council - Membership, Duties, and Sunset Repeal",
+    "url": ""
+  },
+  "ocd-bill/2f26fe8d-9b38-42b7-b5dd-d367dd7a25a9": {
+    "identifier": "HB 1354",
+    "jurisdiction": "Maryland",
+    "latest_action": "Third Reading Passed",
+    "latest_date": "2020-03-17",
+    "title": "Sales and Use Tax and Personal Property Tax \u2013 Services, Aircraft Parts and Equipment, and Data Centers",
+    "url": ""
+  },
+  "ocd-bill/2f4540fa-7382-4c9e-ad19-3b2c5557d32d": {
+    "identifier": "SB 2759",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "VEH CD-SPEED ENFORCE SYSTEMS",
+    "url": ""
+  },
+  "ocd-bill/30484671-1ea6-40e8-98f3-ec0fb288d3b9": {
+    "identifier": "SB 1754",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to Ways & Means",
+    "latest_date": "2025-05-02",
+    "title": "Relating to the authority of a taxing unit to enter into an agreement to exempt from ad valorem taxation a portion of the value of property on which a renewable energy facility is located or is planned to be located.",
+    "url": ""
+  },
+  "ocd-bill/3234ce48-d306-4528-9d87-08024381cc02": {
+    "identifier": "HD 5980",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Placed on file",
+    "latest_date": "2026-04-13",
+    "title": "A communication from the Department of Energy Resources (see Section 5 of Chapter 25A of the General Laws) submitting its calendar year 2025 annual report",
+    "url": ""
+  },
+  "ocd-bill/3258f27a-8115-48ff-a01d-a05c86387bc4": {
+    "identifier": "SB 739",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 3/03 at 1:00 p.m. (Finance)",
+    "latest_date": "2020-02-13",
+    "title": "Economic Development - Advanced Clean Energy and Clean Energy Innovation Investments and Initiatives",
+    "url": ""
+  },
+  "ocd-bill/32de4be8-3e2a-4e24-9858-d74345df0491": {
+    "identifier": "HB 772",
+    "jurisdiction": "Ohio",
+    "latest_action": "Refer to Committee",
+    "latest_date": "2020-11-17",
+    "title": "Change electric utility service law/repeal part of HB 6",
+    "url": ""
+  },
+  "ocd-bill/33c7d969-f725-400d-a84b-84b7f7e180ad": {
+    "identifier": "SB 1665",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "FOIA-PRELIMINARY DRAFT-STUDY",
+    "url": ""
+  },
+  "ocd-bill/3455944e-055b-4cc8-98aa-9479f4b6948b": {
+    "identifier": "HB 298",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2025-05-21T04:00:00+00:00",
+    "title": "Legalize, tax internet gambling; make other Gambling Law changes",
+    "url": ""
+  },
+  "ocd-bill/34810018-256e-48b0-9cf7-c2aa42f6a79e": {
+    "identifier": "H 5555",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Reported on a part of H5501",
+    "latest_date": "2026-07-01",
+    "title": "An Act making appropriations for the fiscal year 2027 for the maintenance of the departments, boards, commissions, institutions, and certain activities of the commonwealth, for interest, sinking fund, and serial bond requirements, and for certain permanent improvements",
+    "url": ""
+  },
+  "ocd-bill/35a6d65a-5ab4-4988-9841-ffbc48ff642f": {
+    "identifier": "HB 762",
+    "jurisdiction": "Ohio",
+    "latest_action": "Reported",
+    "latest_date": "2026-06-09T04:00:00+00:00",
+    "title": "Exempt certain vending machine food purchases from sales, use tax",
+    "url": ""
+  },
+  "ocd-bill/3623ea34-4f10-441d-a676-1e49bba6c854": {
+    "identifier": "HB 4751",
+    "jurisdiction": "Illinois",
+    "latest_action": "Added Co-Sponsor Rep. Anne Stava",
+    "latest_date": "2026-04-13",
+    "title": "WAGES & BENEFITS-SKILLED LABOR",
+    "url": ""
+  },
+  "ocd-bill/37231cb0-f92e-497e-9bbe-319734542959": {
+    "identifier": "S 3041",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "See H5280",
+    "latest_date": "2026-04-09",
+    "title": "Amendment S.3041",
+    "url": ""
+  },
+  "ocd-bill/38c51b6f-8d45-42c6-b6a5-cd86cb469c95": {
+    "identifier": "H 4515",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Published as amended, see H4524",
+    "latest_date": "2022-03-03",
+    "title": "An Act advancing offshore wind and clean energy",
+    "url": ""
+  },
+  "ocd-bill/39d611d4-c8ad-4b32-8ad0-42b0e37fefd6": {
+    "identifier": "SB 428",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-05-13T04:00:00+00:00",
+    "title": "Enact the Build Smart Act",
+    "url": ""
+  },
+  "ocd-bill/3abbc1c0-f133-4689-b44e-ed9a8d94b247": {
+    "identifier": "SB 3104",
+    "jurisdiction": "Illinois",
+    "latest_action": "Senate Committee Amendment No. 1 Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "PLUG-IN SOLAR ENERGY SYSTEMS",
+    "url": ""
+  },
+  "ocd-bill/3ac42827-c658-423c-bbf9-8030454858b2": {
+    "identifier": "SB 950",
+    "jurisdiction": "Maryland",
+    "latest_action": "Referred Rules and Executive Nominations",
+    "latest_date": "2023-04-10",
+    "title": "Maryland Zero Emission Electric Vehicle Infrastructure Council \u2013 Membership",
+    "url": ""
+  },
+  "ocd-bill/3b336406-0e80-472b-a152-16dd132c2f2e": {
+    "identifier": "H 5175",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Placed in the Orders of the Day for Wednesday, July 1, 2026",
+    "latest_date": "2026-06-25",
+    "title": "An Act relative to energy affordability, clean power and economic competitiveness",
+    "url": ""
+  },
+  "ocd-bill/3c6ed1da-29a0-4678-94eb-f1adc029646d": {
+    "identifier": "HR 4",
+    "jurisdiction": "Texas",
+    "latest_action": "Reported enrolled",
+    "latest_date": "2023-01-11",
+    "title": "Adopting the House Rules of Procedure for the 88th Legislature.",
+    "url": ""
+  },
+  "ocd-bill/3e405ea5-3401-44cf-9b45-9d69fca72d3b": {
+    "identifier": "HB 352",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 604",
+    "latest_date": "2025-05-20",
+    "title": "Budget Reconciliation and Financing Act of 2025",
+    "url": ""
+  },
+  "ocd-bill/3ee0caa3-48e4-4876-bb2b-a126ce9c319d": {
+    "identifier": "HB 1291",
+    "jurisdiction": "Maryland",
+    "latest_action": "Referred Rules",
+    "latest_date": "2023-04-10",
+    "title": "Maryland Zero Emission Electric Vehicle Infrastructure Council - Membership",
+    "url": ""
+  },
+  "ocd-bill/3f8ffa08-c52b-4858-a568-dbcafc0451f5": {
+    "identifier": "HR 4",
+    "jurisdiction": "Texas",
+    "latest_action": "Reported enrolled",
+    "latest_date": "2019-01-09",
+    "title": "Adopting the rules of the House for the 86th Legislature.",
+    "url": ""
+  },
+  "ocd-bill/3fcfa8f5-0a13-430c-85ed-97094b7b9ec5": {
+    "identifier": "H 4707",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Published as amended, see H4726",
+    "latest_date": "2024-06-05",
+    "title": "An Act relative to the Affordable Homes Act",
+    "url": ""
+  },
+  "ocd-bill/4060b10b-6edb-4e45-a1c7-8c65676deb75": {
+    "identifier": "HB 1349",
+    "jurisdiction": "Maryland",
+    "latest_action": "Unfavorable Report by Economic Matters",
+    "latest_date": "2020-03-12",
+    "title": "Clean Energy Attribute Credits and Procurement",
+    "url": ""
+  },
+  "ocd-bill/40b6b5c9-072e-4f58-8f8c-cbd30dea30bb": {
+    "identifier": "SB 331",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/05 at 2:00 p.m.",
+    "latest_date": "2020-01-28",
+    "title": "Vehicle-Miles-Traveled Tax and Associated Mandated Devices - Prohibition",
+    "url": ""
+  },
+  "ocd-bill/40efac9f-1d7f-4c6c-aea9-b7bbfec202ee": {
+    "identifier": "HB 630",
+    "jurisdiction": "Ohio",
+    "latest_action": "Introduced",
+    "latest_date": "2026-06-11T04:00:00+00:00",
+    "title": "Regards police escorts for farm equipment, agricultural vehicles",
+    "url": ""
+  },
+  "ocd-bill/451524d6-0155-4972-b1a5-88a91136e0fd": {
+    "identifier": "H 765",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5026",
+    "latest_date": "2022-09-12",
+    "title": "An Act relative to increasing voting opportunities in Massachusetts",
+    "url": ""
+  },
+  "ocd-bill/457050e9-a998-4812-ab87-d1b92fc85560": {
+    "identifier": "H 4690",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5323",
+    "latest_date": "2026-04-06",
+    "title": "An Act establishing a temporary moratorium on the siting of lithium battery storage facilities",
+    "url": ""
+  },
+  "ocd-bill/45c818a4-431e-41a1-acd1-791a103df433": {
+    "identifier": "SB 276",
+    "jurisdiction": "Ohio",
+    "latest_action": "Passed - Amended",
+    "latest_date": "2026-06-10T04:00:00+00:00",
+    "title": "Ratify the Interstate Compact for School Psychologists",
+    "url": ""
+  },
+  "ocd-bill/465c4877-1826-4ff9-a925-0cd8f37f938a": {
+    "identifier": "SB 2021",
+    "jurisdiction": "Texas",
+    "latest_action": "Left pending in committee",
+    "latest_date": "2025-04-01",
+    "title": "Relating to the interconnection and integration of distributed energy resources.",
+    "url": ""
+  },
+  "ocd-bill/46bfdc1b-07fd-45dc-afd6-fb1d91b679fc": {
+    "identifier": "HB 738",
+    "jurisdiction": "Ohio",
+    "latest_action": "Refer to Committee",
+    "latest_date": "2020-08-31",
+    "title": "Repeal HB 6 of 133rd GA and revive prior law",
+    "url": ""
+  },
+  "ocd-bill/46db3be2-52c7-4ecf-850a-efa497095102": {
+    "identifier": "S 2834",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "See H4726",
+    "latest_date": "2024-06-27",
+    "title": "Amendment S.2834",
+    "url": ""
+  },
+  "ocd-bill/46f3b2f1-7986-4b84-94a8-aa6af735eb6c": {
+    "identifier": "SB 636",
+    "jurisdiction": "Maryland",
+    "latest_action": "Withdrawn by Sponsor",
+    "latest_date": "2023-03-13",
+    "title": "Public Safety - Solar Battery Energy Storage Systems",
+    "url": ""
+  },
+  "ocd-bill/49212e4f-86e0-4ba3-8e68-f129bb8d2c98": {
+    "identifier": "SB 1945",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to Transportation",
+    "latest_date": "2021-04-01",
+    "title": "Relating to the terminology used to describe transportation-related accidents.",
+    "url": ""
+  },
+  "ocd-bill/499330f9-733d-42db-bae8-776098b4911f": {
+    "identifier": "HB 4595",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on 9/1/23",
+    "latest_date": "2023-06-12",
+    "title": "Relating to nonsubstantive additions to, revisions of, and corrections in enacted codes and to the nonsubstantive codification or disposition of various laws omitted from enacted codes.",
+    "url": ""
+  },
+  "ocd-bill/49aa4ae9-1829-4d5c-a649-b905cb5c23be": {
+    "identifier": "HB 581",
+    "jurisdiction": "Maryland",
+    "latest_action": "Enacted under Article II, Section 17(c) of the Maryland Constitution - Chapter 736",
+    "latest_date": "2021-05-30",
+    "title": "Labor and Employment - Employment Standards During an Emergency (Maryland Essential Workers' Protection Act)",
+    "url": ""
+  },
+  "ocd-bill/49d22062-679f-433a-afe4-270eba0df5cc": {
+    "identifier": "SB 3293",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-04-24",
+    "title": "BROWNFIELD PHOTOVOLATIC REGS",
+    "url": ""
+  },
+  "ocd-bill/4a1e35e6-7aee-44fa-986b-659782675cc2": {
+    "identifier": "HB 746",
+    "jurisdiction": "Ohio",
+    "latest_action": "Refer to Committee",
+    "latest_date": "2020-08-31",
+    "title": "Repeal HB 6 of 133rd GA and revive prior law",
+    "url": ""
+  },
+  "ocd-bill/4ae799cb-8c85-41bb-97fe-972b0438b2f3": {
+    "identifier": "HB 74",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 1/31 at 1:00 p.m. (Appropriations) and Hearing canceled (Environment and Transportation)",
+    "latest_date": "2023-01-25",
+    "title": "Transportation \u2013 Maryland Rail Authority \u2013 Establishment (Maryland Rail Investment Act of 2023)",
+    "url": ""
+  },
+  "ocd-bill/4b25a95d-4771-41ec-9b39-ce13f321f611": {
+    "identifier": "HB 31",
+    "jurisdiction": "Ohio",
+    "latest_action": "Effective 9/7/26",
+    "latest_date": "2026-09-07T04:00:00+00:00",
+    "title": "Require electronic recordings of all parole board hearings",
+    "url": ""
+  },
+  "ocd-bill/4bd3abd0-21d1-4883-86de-a85c5366a5f1": {
+    "identifier": "SB 19",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 584",
+    "latest_date": "2023-05-08",
+    "title": "Equity in Transportation Sector - Guidelines and Analyses",
+    "url": ""
+  },
+  "ocd-bill/4c9247af-f487-4586-b82e-93f280d9f1f5": {
+    "identifier": "H 3347",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Senate concurred",
+    "latest_date": "2022-06-09",
+    "title": "An Act promoting zero-emission vehicles",
+    "url": ""
+  },
+  "ocd-bill/4d9712b7-48ed-4209-be6d-d08db5a28c20": {
+    "identifier": "H 5060",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Signed by the Governor, Chapter 179 of the Acts of 2022",
+    "latest_date": "2022-08-11",
+    "title": "An Act driving clean energy and offshore wind",
+    "url": ""
+  },
+  "ocd-bill/4e2cb337-da3a-4d53-bbf4-83606aa28d89": {
+    "identifier": "S 1926",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Bill reported favorably by committee and referred to the committee on House Ways and Means",
+    "latest_date": "2026-06-29",
+    "title": "An Act exempting residential electric vehicle chargers from the sales tax",
+    "url": ""
+  },
+  "ocd-bill/4ee64059-e562-457f-9f07-00b88acfa0b0": {
+    "identifier": "HB 4524",
+    "jurisdiction": "Texas",
+    "latest_action": "Comm. report sent to Local & Consent Calendar",
+    "latest_date": "2025-05-14",
+    "title": "Relating to the establishment of the Texas airport investment partnership program.",
+    "url": ""
+  },
+  "ocd-bill/514afc75-67fc-4d72-aafe-1a2597031fc7": {
+    "identifier": "HD 6046",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "",
+    "latest_date": "",
+    "title": "An Act relative to Massachusetts winning global investment, talent, and innovation",
+    "url": ""
+  },
+  "ocd-bill/52563158-37e0-41ac-bc6e-d7de136e26b8": {
+    "identifier": "SB 3794",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-04-17",
+    "title": "LOC GOV-RESIDENTIAL ENERGY",
+    "url": ""
+  },
+  "ocd-bill/53132378-c354-4a9d-ba0a-4d1b8d4c3e63": {
+    "identifier": "HB 4057",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to Ways & Means",
+    "latest_date": "2025-03-27",
+    "title": "Relating to the authority of a taxing unit to enter into an agreement to exempt from ad valorem taxation a portion of the value of property on which a renewable energy facility is located or is planned to be located.",
+    "url": ""
+  },
+  "ocd-bill/5436491a-7a10-4dca-99e1-1fb4cf5e8661": {
+    "identifier": "H 4240",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Item 7077-0023 passed over veto  -see   Roll Call #89 (Yeas 38 to Nays 0)",
+    "latest_date": "2025-10-23",
+    "title": "An Act making appropriations for the fiscal year 2026 for the maintenance of the departments, boards, commissions, institutions and certain activities of the Commonwealth, for interest, sinking fund and serial bond requirements, and for certain permanent improvements",
+    "url": ""
+  },
+  "ocd-bill/544e494e-7209-47c0-a2b9-a6e359937399": {
+    "identifier": "S 3064",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Committee of conference appointed (Cyr-Rausch-Durant)",
+    "latest_date": "2026-06-23",
+    "title": "An Act to build resilience for Massachusetts communities",
+    "url": ""
+  },
+  "ocd-bill/54b2232d-1faa-401c-bd7a-2e2bae7a7a15": {
+    "identifier": "SB 190",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2025-05-07T04:00:00+00:00",
+    "title": "Enact A Good Deal for Ohio Act",
+    "url": ""
+  },
+  "ocd-bill/56263d0a-2302-45a7-8421-60efba54c4b0": {
+    "identifier": "HB 5600",
+    "jurisdiction": "Illinois",
+    "latest_action": "Added Co-Sponsor Rep. Diane Blair-Sherlock",
+    "latest_date": "2026-05-12",
+    "title": "WAREHOUSE POLLUTION REDUCTION",
+    "url": ""
+  },
+  "ocd-bill/58880d5b-abe0-4b00-9548-7efd106dbe51": {
+    "identifier": "HB 208",
+    "jurisdiction": "Texas",
+    "latest_action": "Filed",
+    "latest_date": "2025-08-18",
+    "title": "Relating to the organization, powers, and authority of the Texas State Guard, including the powers and authority of the adjutant general and governor relating to the Texas State Guard.",
+    "url": ""
+  },
+  "ocd-bill/58dbbca2-a50f-4f14-823f-8e1d407d48e6": {
+    "identifier": "HD 5554",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Reported, referred to the committee on Joint Rules, reported, rules suspended and referred to the committee on Telecommunications, Utilities and Energy",
+    "latest_date": "2026-02-02",
+    "title": "An Act addressing energy costs, transparency, and sustainability",
+    "url": ""
+  },
+  "ocd-bill/598c9944-e767-4b06-97fb-6a51336e2a67": {
+    "identifier": "HB 931",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-05-20T04:00:00+00:00",
+    "title": "Regards use of E15 blended fuel for state motor vehicles",
+    "url": ""
+  },
+  "ocd-bill/5aa8ef31-1adc-4688-9e21-d26303ae622f": {
+    "identifier": "HB 10",
+    "jurisdiction": "Ohio",
+    "latest_action": "Refer to Committee",
+    "latest_date": "2021-02-04",
+    "title": "Revise electric utility service law",
+    "url": ""
+  },
+  "ocd-bill/5b441c0a-53e5-4b76-8062-346e19afc944": {
+    "identifier": "HB 4995",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 19(a) / Re-referred to Rules Committee",
+    "latest_date": "2026-04-17",
+    "title": "ELECTRIC TRANSMISSION SITING",
+    "url": ""
+  },
+  "ocd-bill/5c7d2244-2c33-40e7-abc9-896cca8e6e96": {
+    "identifier": "SB 363",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/07 at 1:00 p.m.",
+    "latest_date": "2018-01-24",
+    "title": "Vehicle-Miles-Traveled Tax and Associated Mandated Devices - Prohibition",
+    "url": ""
+  },
+  "ocd-bill/5c82a2d3-f95d-46fd-9e67-e089eb1c3c1a": {
+    "identifier": "SB 4203",
+    "jurisdiction": "Illinois",
+    "latest_action": "Added as Co-Sponsor Sen. Erica Harriss",
+    "latest_date": "2026-06-17",
+    "title": "DCEO-DATA CENTERS",
+    "url": ""
+  },
+  "ocd-bill/5cd4e1c3-c034-43cf-bc17-72e369fe0c57": {
+    "identifier": "SB 370",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-03-04T05:00:00+00:00",
+    "title": "Enhance penalties for offenses against a person with a disability",
+    "url": ""
+  },
+  "ocd-bill/5d958605-837e-4ca5-9521-379b102cf4ca": {
+    "identifier": "H 3539",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5323",
+    "latest_date": "2026-04-06",
+    "title": "An Act relative to a tactical transition to affordable, clean thermal energy",
+    "url": ""
+  },
+  "ocd-bill/5eec9468-e863-4dc1-941b-be066b041b33": {
+    "identifier": "S 1924",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5279",
+    "latest_date": "2022-10-06",
+    "title": "An Act closing a corporate tax haven loophole",
+    "url": ""
+  },
+  "ocd-bill/5fc1bcf5-f28d-439b-a0ab-be3a926b731b": {
+    "identifier": "HB 3934",
+    "jurisdiction": "Texas",
+    "latest_action": "Left pending in committee",
+    "latest_date": "2023-04-26",
+    "title": "Relating to the operation of vehicles transporting iron or steel products; authorizing a fee.",
+    "url": ""
+  },
+  "ocd-bill/6019f547-761e-4d82-80b1-25736f020b06": {
+    "identifier": "HB 272",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 189",
+    "latest_date": "2026-04-28",
+    "title": "Food Establishments - Lavatory Requirement and On-Farm Food Service Facility License",
+    "url": ""
+  },
+  "ocd-bill/610d2310-3ac8-4e3e-a68a-04c6a1205112": {
+    "identifier": "H 3467",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5323",
+    "latest_date": "2026-04-06",
+    "title": "An Act establishing solar neighborhoods",
+    "url": ""
+  },
+  "ocd-bill/6159e496-8d06-4568-90d2-5ca366812aca": {
+    "identifier": "SB 2785",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-06-01",
+    "title": "UTILITY-SHARED ROOF/TOWNHOUSE",
+    "url": ""
+  },
+  "ocd-bill/61c8fcbf-3fb9-42fe-915c-9ddd653689a6": {
+    "identifier": "HB 2963",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on . . . . . . . . . . . . . . .",
+    "latest_date": "2025-06-20",
+    "title": "Relating to diagnosis, maintenance, and repair of certain digital electronic equipment.",
+    "url": ""
+  },
+  "ocd-bill/621fc2d9-6536-422a-8dff-d24a9ec25456": {
+    "identifier": "HD 3251",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "",
+    "latest_date": "",
+    "title": "An Act relative to increasing voting opportunities in Massachusetts",
+    "url": ""
+  },
+  "ocd-bill/622bf1bf-eabb-4718-9421-15784e9ba7b5": {
+    "identifier": "HB 9",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 583",
+    "latest_date": "2023-05-08",
+    "title": "Equity in Transportation Sector - Guidelines and Analyses",
+    "url": ""
+  },
+  "ocd-bill/6267691d-b0cc-41b3-905f-35054681df05": {
+    "identifier": "S 2249",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied H5175",
+    "latest_date": "2026-06-25",
+    "title": "An Act relative to a tactical transition to affordable, clean thermal energy",
+    "url": ""
+  },
+  "ocd-bill/630fe794-7e8a-4c43-9684-2c36d2e4afa6": {
+    "identifier": "H 5100",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "For actions on the sections returned with recommendations of amendment, see H5111",
+    "latest_date": "2024-11-25",
+    "title": "An Act relative to strengthening Massachusetts\u2019 economic leadership",
+    "url": ""
+  },
+  "ocd-bill/63ce9771-8363-4cd9-9772-fbe5ccac1799": {
+    "identifier": "SB 1750",
+    "jurisdiction": "Illinois",
+    "latest_action": "Senate Committee Amendment No. 2 Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "PROP TX-SENIOR FREEZE",
+    "url": ""
+  },
+  "ocd-bill/64ee6e29-05dc-4b7d-84da-0e4314343f7a": {
+    "identifier": "SB 1825",
+    "jurisdiction": "Texas",
+    "latest_action": "Left pending in committee",
+    "latest_date": "2025-03-27",
+    "title": "Relating to fire safety standards and emergency operations plans for the operation of battery energy storage.",
+    "url": ""
+  },
+  "ocd-bill/6544caa1-ff01-41b4-883b-e518b8f0ec64": {
+    "identifier": "HB 834",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 569",
+    "latest_date": "2023-05-08",
+    "title": "Electric Vehicle Charging Infrastructure - Requirements (Electric Vehicle Charging Reliability Act)",
+    "url": ""
+  },
+  "ocd-bill/656e6360-74a2-4378-96b7-1438e941fb67": {
+    "identifier": "H 3753",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5360",
+    "latest_date": "2026-04-15",
+    "title": "An Act relative to setting deadlines to electrify the commuter rail",
+    "url": ""
+  },
+  "ocd-bill/68e2b0c7-b3b0-4cf6-bf8c-7311a80d66f4": {
+    "identifier": "HB 4611",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on . . . . . . . . . . . . . . .",
+    "latest_date": "2023-06-12",
+    "title": "Relating to the nonsubstantive revision of the health and human services laws governing the Health and Human Services Commission, Medicaid, and other social services.",
+    "url": ""
+  },
+  "ocd-bill/69c28f4d-14a9-4ffc-a977-cc5b1aa0e593": {
+    "identifier": "SB 336",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-02-11T05:00:00+00:00",
+    "title": "Require disclosure of mandatory fees in consumer transactions",
+    "url": ""
+  },
+  "ocd-bill/6b34cfb9-4a07-47a2-b529-aeb131b58a20": {
+    "identifier": "HB 1560",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on 9/1/21",
+    "latest_date": "2021-06-15",
+    "title": "Relating to the continuation and functions of the Texas Department of Licensing and Regulation.",
+    "url": ""
+  },
+  "ocd-bill/6b871210-818a-426a-adde-1046205cb5dc": {
+    "identifier": "SB 306",
+    "jurisdiction": "Ohio",
+    "latest_action": "Reported - Substitute",
+    "latest_date": "2026-06-09T04:00:00+00:00",
+    "title": "Regards insurance transactions, plans, and policies",
+    "url": ""
+  },
+  "ocd-bill/6c31294d-3011-4b66-8c8a-c3a443760d91": {
+    "identifier": "SB 3220",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "CONSUMER DATA PRIVACY",
+    "url": ""
+  },
+  "ocd-bill/6c4b4e40-4c81-4eee-bb16-fc826afcfa91": {
+    "identifier": "HB 550",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 98",
+    "latest_date": "2023-04-21",
+    "title": "Maryland Energy Administration \u2013 Energy Programs \u2013 Modifications (Clean Transportation and Energy Act)",
+    "url": ""
+  },
+  "ocd-bill/6cd03be2-9767-4378-81a9-06f4559198cd": {
+    "identifier": "HB 4915",
+    "jurisdiction": "Texas",
+    "latest_action": "Placed on General State Calendar",
+    "latest_date": "2025-05-13",
+    "title": "Relating to legal representation of indigent persons in this state and to proceedings before a magistrate including the appointment of counsel for an indigent defendant.",
+    "url": ""
+  },
+  "ocd-bill/6d619b89-1b04-472c-9c96-b53b67e8ee10": {
+    "identifier": "H 5122",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Read for its information and returned",
+    "latest_date": "2024-12-30",
+    "title": "An Act  Communication from the Department of Energy Resources of the Executive Office of Energy and Environmental Affairs (under the provisions of section 12 of Chapter 25A of the General Laws) submitting proposed amendments to regulations 225 CMR 22.00 and 23.00 \u2013 governing the Stretch and Specialized Code Regulations",
+    "url": ""
+  },
+  "ocd-bill/6daa5283-a868-4ec0-b5db-74ac42ebbf21": {
+    "identifier": "SB 59",
+    "jurisdiction": "Maryland",
+    "latest_action": "Favorable with Amendments Report by Budget and Taxation",
+    "latest_date": "2026-04-10",
+    "title": "Transportation - Major Highway Capacity Expansion Projects and Impact Assessments (Transportation and Climate Alignment Act of 2026)",
+    "url": ""
+  },
+  "ocd-bill/6dd60ed8-9df7-4186-8a54-26976ae2bbbf": {
+    "identifier": "SD 2755",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Placed on file",
+    "latest_date": "2025-03-17",
+    "title": "2024 SOC Report on Public Records Requests received by agencies",
+    "url": ""
+  },
+  "ocd-bill/6de546d0-8306-4373-84c9-9f93804c3a33": {
+    "identifier": "SB 3099",
+    "jurisdiction": "Illinois",
+    "latest_action": "Chief Sponsor Changed to Sen. John F. Curran",
+    "latest_date": "2026-06-01",
+    "title": "FIREARM DEALER LIC CERT-REPEAL",
+    "url": ""
+  },
+  "ocd-bill/6e2985fd-57de-4a7f-987f-a789b6ce3d54": {
+    "identifier": "HB 155",
+    "jurisdiction": "Texas",
+    "latest_action": "Filed",
+    "latest_date": "2025-07-21",
+    "title": "Relating to the authority of a political subdivision to use public money for an environmental project.",
+    "url": ""
+  },
+  "ocd-bill/6ec9f515-75d3-4199-b025-0adb54b99cfa": {
+    "identifier": "HB 5569",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to State Affairs",
+    "latest_date": "2025-04-07",
+    "title": "Relating to fire safety standards and emergency operations plans for the operation of battery energy storage.",
+    "url": ""
+  },
+  "ocd-bill/6f17a23a-1467-4de0-992d-670d3c77deef": {
+    "identifier": "HB 1620",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on 9/1/25",
+    "latest_date": "2025-05-28",
+    "title": "Relating to nonsubstantive additions to, revisions of, and corrections in enacted codes, to the nonsubstantive codification or disposition of various laws omitted from enacted codes, and to conforming codifications enacted by the 88th Legislature to other Acts of that legislature.",
+    "url": ""
+  },
+  "ocd-bill/6f8da85b-0462-42db-8215-c19071dd9202": {
+    "identifier": "HB 4472",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on 9/1/21",
+    "latest_date": "2021-06-18",
+    "title": "Relating to the Texas emissions reduction plan.",
+    "url": ""
+  },
+  "ocd-bill/6fb6eaf4-78c2-47e0-a844-139a885b4b4c": {
+    "identifier": "HB 1139",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 3/10 at 1:00 p.m.",
+    "latest_date": "2020-02-10",
+    "title": "Public Safety - Maryland Code of Military Justice",
+    "url": ""
+  },
+  "ocd-bill/7017b382-c5bb-46a4-b04a-830a2f5730bb": {
+    "identifier": "HB 1556",
+    "jurisdiction": "Maryland",
+    "latest_action": "Second Reading Passed with Amendments",
+    "latest_date": "2025-04-04",
+    "title": "Environment - Advanced Clean Cars II Program and Advanced Clean Trucks Program - Implementation, Application, and Enforcement",
+    "url": ""
+  },
+  "ocd-bill/732be6fd-b447-4755-b72b-306242b211e9": {
+    "identifier": "SB 450",
+    "jurisdiction": "Ohio",
+    "latest_action": "Effective 6/15/26",
+    "latest_date": "2026-06-15T04:00:00+00:00",
+    "title": "Make capital appropriations for the biennium ending June 30, 2028",
+    "url": ""
+  },
+  "ocd-bill/737640ff-fbe8-4401-846e-f99981687ce6": {
+    "identifier": "H 3788",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Bill reported favorably by committee and referred to the committee on House Ways and Means",
+    "latest_date": "2026-03-23",
+    "title": "An Act to explore alternative funding sources to ensure safe and reliable transportation",
+    "url": ""
+  },
+  "ocd-bill/73f786ad-83e2-4333-a13c-ba66c62644c9": {
+    "identifier": "SB 1337",
+    "jurisdiction": "Illinois",
+    "latest_action": "Chief Sponsor Changed to Sen. John F. Curran",
+    "latest_date": "2026-06-01",
+    "title": "FIREARM DEALER LIC CERT-REPEAL",
+    "url": ""
+  },
+  "ocd-bill/749394e8-343e-4fbe-916f-edb7a6a64ad5": {
+    "identifier": "HB 210",
+    "jurisdiction": "Ohio",
+    "latest_action": "Passed",
+    "latest_date": "2026-06-10T04:00:00+00:00",
+    "title": "Regards the sale of used catalytic converters",
+    "url": ""
+  },
+  "ocd-bill/74a079b6-0519-4914-b174-997538f1b600": {
+    "identifier": "HB 650",
+    "jurisdiction": "Maryland",
+    "latest_action": "Vetoed by the Governor (Duplicative)",
+    "latest_date": "2019-05-24",
+    "title": "Energy Storage Pilot Project Act",
+    "url": ""
+  },
+  "ocd-bill/74cddb24-49dd-462a-8cb0-a0b2b07485b0": {
+    "identifier": "SB 1762",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective immediately",
+    "latest_date": "2025-06-20",
+    "title": "Relating to the authority of the Railroad Commission of Texas to designate certain persons as the operator of an orphaned oil or gas well.",
+    "url": ""
+  },
+  "ocd-bill/75d82523-6391-42ce-bdb5-e309d5fd175c": {
+    "identifier": "S 3050",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Reprinted, as amended, see S3064",
+    "latest_date": "2026-04-15",
+    "title": "An Act to build resilience for Massachusetts communities",
+    "url": ""
+  },
+  "ocd-bill/76c80fd0-9c1e-419c-b0ce-067c03ca3a89": {
+    "identifier": "S 2869",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "See H4804",
+    "latest_date": "2024-07-11",
+    "title": "Amendment S.2869",
+    "url": ""
+  },
+  "ocd-bill/777e96dc-d295-4776-83ae-5d8c070a9ec3": {
+    "identifier": "HB 2",
+    "jurisdiction": "Ohio",
+    "latest_action": "Concurred in Senate amendments",
+    "latest_date": "2021-05-05",
+    "title": "Regards broadband expansion",
+    "url": ""
+  },
+  "ocd-bill/77feec2e-0727-4130-891b-eea8dc5c19c9": {
+    "identifier": "HB 2190",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on 9/1/23",
+    "latest_date": "2023-06-12",
+    "title": "Relating to the terminology used to describe transportation-related accidents.",
+    "url": ""
+  },
+  "ocd-bill/7a538be2-17e5-4968-b57c-4ae5255465e3": {
+    "identifier": "HB 455",
+    "jurisdiction": "Ohio",
+    "latest_action": "Passed",
+    "latest_date": "2026-06-10T04:00:00+00:00",
+    "title": "Regards the operation of public schools and the DEW",
+    "url": ""
+  },
+  "ocd-bill/7bef700a-552e-4fc2-b52e-0ea4d0358e18": {
+    "identifier": "HB 18",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/03 at 2:00 p.m.",
+    "latest_date": "2026-01-19",
+    "title": "Transportation Network Companies - Transportation Network Operators - Minimum Payments for Passenger Trips",
+    "url": ""
+  },
+  "ocd-bill/7d1987f9-2e95-45d5-acd1-126e4026b19a": {
+    "identifier": "SB 225",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-05-27T04:00:00+00:00",
+    "title": "Expand the Address Confidentiality Program",
+    "url": ""
+  },
+  "ocd-bill/7d34ef2f-3eed-4c33-bd41-5dfcb1cab104": {
+    "identifier": "S 459",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "New draft substituted, as amended, see S2545",
+    "latest_date": "2021-10-06",
+    "title": "An Act fostering voter opportunities, trust, equity and security",
+    "url": ""
+  },
+  "ocd-bill/7decf9b0-f604-475e-ae83-29f600aa8573": {
+    "identifier": "HB 1897",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to State Affairs",
+    "latest_date": "2025-03-14",
+    "title": "Relating to requirements for the approval by the Public Utility Commission of Texas of certain coastal facilities for the provision of electric service.",
+    "url": ""
+  },
+  "ocd-bill/7f607154-7a20-4ec3-a856-57d53a67140c": {
+    "identifier": "SB 41",
+    "jurisdiction": "Illinois",
+    "latest_action": "Senate Committee Amendment No. 1 Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-06-01",
+    "title": "CLEAN TRANSPORTATION STANDARD",
+    "url": ""
+  },
+  "ocd-bill/7fa46a35-e8d1-4d45-90cc-665ace7395e4": {
+    "identifier": "HB 835",
+    "jurisdiction": "Maryland",
+    "latest_action": "Withdrawn by Sponsor",
+    "latest_date": "2022-03-17",
+    "title": "Retail Service Stations \u2013 New Construction \u2013 Setbacks and Electric Charging Stations",
+    "url": ""
+  },
+  "ocd-bill/819161e2-026c-420d-be2c-3edad2268395": {
+    "identifier": "H 3631",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5132",
+    "latest_date": "2026-02-25",
+    "title": "An Act to build future-forward parking structures to promote EV equity and walkable downtowns",
+    "url": ""
+  },
+  "ocd-bill/83113fec-c0cf-44b2-b057-d44c9d0a1379": {
+    "identifier": "HB 57",
+    "jurisdiction": "Ohio",
+    "latest_action": "Refer to Committee",
+    "latest_date": "2021-02-04",
+    "title": "Repeal HB 6 of the 133rd GA",
+    "url": ""
+  },
+  "ocd-bill/8333ebea-03e1-46d8-b7a5-8075a5391bb0": {
+    "identifier": "HB 164",
+    "jurisdiction": "Texas",
+    "latest_action": "Left pending in committee",
+    "latest_date": "2025-08-22",
+    "title": "Relating to the Texas Flood Recovery, Reimbursement, and Reconstruction Program; authorizing a civil penalty.",
+    "url": ""
+  },
+  "ocd-bill/84a6f9bb-1b12-4b67-89ed-f92667d3eb93": {
+    "identifier": "SB 715",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to State Affairs",
+    "latest_date": "2025-05-12",
+    "title": "Relating to reliability requirements for certain electric generation facilities.",
+    "url": ""
+  },
+  "ocd-bill/8578dd53-e201-4a95-be72-c00f54fc3ce4": {
+    "identifier": "SB 75",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-06-01",
+    "title": "UTILITIES-WATER ACQUISITION",
+    "url": ""
+  },
+  "ocd-bill/86277a78-68c7-4122-a706-bbaabdbcb21f": {
+    "identifier": "SD 1504",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "",
+    "latest_date": "",
+    "title": "An Act closing a corporate tax haven loophole",
+    "url": ""
+  },
+  "ocd-bill/86eccf83-6d3a-4d4a-9390-4463043ba725": {
+    "identifier": "HB 516",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/29 at 1:00 p.m. (Economic Matters)",
+    "latest_date": "2024-02-02",
+    "title": "Climate Crisis and Environmental Justice Act of 2024",
+    "url": ""
+  },
+  "ocd-bill/8838cb1c-a3e7-48a3-a3f7-66e8da19753f": {
+    "identifier": "SB 284",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/15 at 1:00 p.m.",
+    "latest_date": "2017-01-25",
+    "title": "Vehicle-Miles-Traveled Tax and Associated Mandated Devices - Prohibition",
+    "url": ""
+  },
+  "ocd-bill/88b387ec-4d6b-4d97-9232-63d71ac5df20": {
+    "identifier": "HB 13",
+    "jurisdiction": "Ohio",
+    "latest_action": "Refer to Committee",
+    "latest_date": "2020-06-30",
+    "title": "Establish residential broadband expansion program",
+    "url": ""
+  },
+  "ocd-bill/896045d9-8830-4a4c-a477-84684a151f2f": {
+    "identifier": "SB 3869",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "USE/OCC TAX-DIAPERS",
+    "url": ""
+  },
+  "ocd-bill/8ab47d3a-861c-492b-8004-4fd4ef0999f8": {
+    "identifier": "SB 2878",
+    "jurisdiction": "Texas",
+    "latest_action": "Vetoed by the Governor",
+    "latest_date": "2025-06-22",
+    "title": "Relating to the operation and administration of and practices and procedures related to proceedings in the judicial branch of state government, including court security, court documents and arrest warrants, document delivery, juvenile boards, constitutional amendment election challenges, mandatory expunction for certain persons, record retention, and youth diversion; increasing a criminal penalty; authorizing fees.",
+    "url": ""
+  },
+  "ocd-bill/8b2c3768-043d-4494-b971-9d1edc9e15c2": {
+    "identifier": "H 3700",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied H3688",
+    "latest_date": "2025-11-18",
+    "title": "An Act promoting price transparency for electric vehicle charging stations",
+    "url": ""
+  },
+  "ocd-bill/8b5cc6ee-cf93-4f97-a762-2f5424729300": {
+    "identifier": "H 5470",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Signed by the Governor, Chapter 101 of the Acts of 2026",
+    "latest_date": "2026-06-12",
+    "title": "An Act making appropriations for the fiscal year 2026 to provide for supplementing certain existing appropriations and for certain other activities and projects",
+    "url": ""
+  },
+  "ocd-bill/8b63eb95-7e3c-4ef0-901f-fcfc5d06d22d": {
+    "identifier": "SB 420",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-04-15T04:00:00+00:00",
+    "title": "Regards JobsOhio public records, open meetings, performance audit",
+    "url": ""
+  },
+  "ocd-bill/8c76067e-0c7c-4870-9ff4-27f7cdb165e0": {
+    "identifier": "HB 183",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/05 at 1:00 p.m.",
+    "latest_date": "2026-01-19",
+    "title": "Vehicle Laws - Vehicle Emissions Inspection Program - Repeal",
+    "url": ""
+  },
+  "ocd-bill/8cb03aa2-0f2e-4637-b9a7-aa237650978c": {
+    "identifier": "SB 2852",
+    "jurisdiction": "Illinois",
+    "latest_action": "Senate Committee Amendment No. 2 Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "EPA-SOLID WASTE-FOOD WASTE",
+    "url": ""
+  },
+  "ocd-bill/8d17964a-29a8-4618-8eb6-6eb714641e2a": {
+    "identifier": "HD 1536",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "",
+    "latest_date": "",
+    "title": "An Act fostering voting opportunities, trust, equity, and security",
+    "url": ""
+  },
+  "ocd-bill/8eac99d0-37a2-4fc2-9647-ab013158e550": {
+    "identifier": "SB 553",
+    "jurisdiction": "Maryland",
+    "latest_action": "Third Reading Passed",
+    "latest_date": "2024-04-08",
+    "title": "Maryland Zero Emission Electric Vehicle Infrastructure Council - Membership and Reporting",
+    "url": ""
+  },
+  "ocd-bill/8fc8c4e5-80a4-4c05-8d10-2e6262092fdb": {
+    "identifier": "S 2136",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Ought NOT to pass (under Joint Rule 10) and placed in the Orders of the Day for the next session",
+    "latest_date": "2022-08-08",
+    "title": "An Act transitioning Massachusetts to clean electricity, heating, and transportation",
+    "url": ""
+  },
+  "ocd-bill/903385a5-3fb4-41da-b992-6fa0ea84263b": {
+    "identifier": "S 3077",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Hearing rescheduled to 05/28/2026 from 01:00 PM-03:50 PM in A-1   Hearing updated to New End Time",
+    "latest_date": "2026-05-28",
+    "title": "An Act to enhance the safe use of micromobility devices",
+    "url": ""
+  },
+  "ocd-bill/926ee531-f49b-474a-b809-5a028f2547c0": {
+    "identifier": "HB 889",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 3/09 at 1:00 p.m. (Economic Matters)",
+    "latest_date": "2023-02-22",
+    "title": "Retail Service Stations - Electric Vehicle Charging Stations and Property Tax Credit for Service Station Conversions",
+    "url": ""
+  },
+  "ocd-bill/92cad1ab-8fe3-476d-aca9-a57fdc40e436": {
+    "identifier": "SB 2657",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to Business & Commerce",
+    "latest_date": "2025-04-03",
+    "title": "Relating to the inclusion of recycling or disposal provisions in certain lease agreements of wind or solar power facilities.",
+    "url": ""
+  },
+  "ocd-bill/934cd665-e035-4daf-adfc-36af7916d9c7": {
+    "identifier": "HB 4363",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to State Affairs",
+    "latest_date": "2025-04-01",
+    "title": "Relating to battery energy storage facilities; authorizing  fees.",
+    "url": ""
+  },
+  "ocd-bill/93828d4b-3709-41db-97ed-711397129abb": {
+    "identifier": "HB 147",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2025-03-05T05:00:00+00:00",
+    "title": "Exempt from sales and use tax certain port authority materials",
+    "url": ""
+  },
+  "ocd-bill/93c30256-a038-4807-b218-b61781b30180": {
+    "identifier": "S 2542",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "New draft substituted, see S3050",
+    "latest_date": "2026-04-15",
+    "title": "An Act to build resilience for Massachusetts communities",
+    "url": ""
+  },
+  "ocd-bill/93d45709-4f52-467a-8d19-784977bba46f": {
+    "identifier": "HB 3552",
+    "jurisdiction": "Texas",
+    "latest_action": "Laid on the table subject to call",
+    "latest_date": "2025-05-14",
+    "title": "Relating to criminal conduct involving the theft, damage, destruction, or unlawful possession of copper or brass, to criminal conduct committed in, around, or in relation to critical infrastructure facilities or equipment or interrupting or impairing the operation of those facilities or equipment, and to the sale of regulated materials, including copper or brass material, to metal recycling entities and training on identifying those materials; creating criminal offenses; increasing criminal penalties; providing an administrative penalty.",
+    "url": ""
+  },
+  "ocd-bill/94336eaa-b041-46be-b0de-9c4e6332771a": {
+    "identifier": "HB 505",
+    "jurisdiction": "Maryland",
+    "latest_action": "House Conference Committee Appointed (Delegates  Fraser-Hidalgo,  Adams and  Crosby)",
+    "latest_date": "2024-04-05",
+    "title": "Electric Companies - Regional Transmission Organizations - Membership and Report (Utility Transparency and Accountability Act)",
+    "url": ""
+  },
+  "ocd-bill/944c998c-5daf-4d98-b96f-c31c9cb3746b": {
+    "identifier": "S 3054",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "See H5280",
+    "latest_date": "2026-04-09",
+    "title": "Amendment S.3054",
+    "url": ""
+  },
+  "ocd-bill/9537b8c5-3805-4bc2-b94c-5fec5c6132d2": {
+    "identifier": "SB 3120",
+    "jurisdiction": "Illinois",
+    "latest_action": "Senate Committee Amendment No. 1 Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "DCEO-DATA CENTERS",
+    "url": ""
+  },
+  "ocd-bill/965fa89c-b171-4120-8c41-ff5b7ff57f5e": {
+    "identifier": "SB 291",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 344",
+    "latest_date": "2022-05-16",
+    "title": "Creation of a State Debt \u2013 Maryland Consolidated Capital Bond Loan of 2022, and the Maryland Consolidated Capital Bond Loans of 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, and 2021",
+    "url": ""
+  },
+  "ocd-bill/9676e4b7-8a8f-4e9b-875a-1e18384c708d": {
+    "identifier": "HB 5060",
+    "jurisdiction": "Texas",
+    "latest_action": "Left pending in committee",
+    "latest_date": "2025-04-24",
+    "title": "Relating to the operation and administration of and practices and procedures related to proceedings in the judicial branch of state government.",
+    "url": ""
+  },
+  "ocd-bill/97112df7-f149-43af-bc2d-fc4d07e2d74a": {
+    "identifier": "SD 1096",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "",
+    "latest_date": "",
+    "title": "An Act relative to expanding voting options in Massachusetts",
+    "url": ""
+  },
+  "ocd-bill/976a91d5-23b3-417d-b8d3-346264aac957": {
+    "identifier": "SB 3816",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "AUTO LICENSE PLATE RECOGNITION",
+    "url": ""
+  },
+  "ocd-bill/98074fe9-aedb-4cce-b6fe-c3419c0334dd": {
+    "identifier": "SB 8",
+    "jurisdiction": "Ohio",
+    "latest_action": "Introduced",
+    "latest_date": "2021-02-16",
+    "title": "Regards broadband expansion",
+    "url": ""
+  },
+  "ocd-bill/98a45477-cf3f-4173-acfa-072e3b085ea7": {
+    "identifier": "H 4919",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Report accepted, in concurrence.",
+    "latest_date": "2022-08-04",
+    "title": "An Act  Communication from the Division of Energy Resources of the Executive Office of Energy and Environmental Affairs (under the provisions of section 12 of Chapter 25A of the General Laws) submitting amendments to 225 CMR 14.00 and 15.00, Renewable Energy Portfolio Standard Regulations (RPS) Class I and Class II",
+    "url": ""
+  },
+  "ocd-bill/98e3df90-22e2-44fd-8e99-8c40f9153164": {
+    "identifier": "H 3519",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5323",
+    "latest_date": "2026-04-06",
+    "title": "An Act relative to a feasibility report on solar rooftop energy on new buildings",
+    "url": ""
+  },
+  "ocd-bill/9942402b-2f9d-4423-b7cf-30557680b98c": {
+    "identifier": "HB 959",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-06-03T04:00:00+00:00",
+    "title": "Make capital appropriations for the biennium ending June 30, 2028",
+    "url": ""
+  },
+  "ocd-bill/9a453e71-4dd9-4966-9596-97abad541c65": {
+    "identifier": "SD 2227",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "House concurred",
+    "latest_date": "2025-02-27",
+    "title": "An Act imposing an in-state mileage-based road usage charge on the use of clean energy vehicles",
+    "url": ""
+  },
+  "ocd-bill/9ac310bf-5c3e-44b8-98cf-0488fd3a67dd": {
+    "identifier": "SD 1002",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "",
+    "latest_date": "",
+    "title": "An Act fostering voter opportunities, trust, equity and security",
+    "url": ""
+  },
+  "ocd-bill/9b64adbb-f422-4dce-b662-99de7ca44f0f": {
+    "identifier": "SB 2949",
+    "jurisdiction": "Texas",
+    "latest_action": "Committee report sent to Calendars",
+    "latest_date": "2025-05-24",
+    "title": "Relating to the regulation of certain facilities and operators engaged in the motor fuel transport or export business; requiring an occupational license; authorizing a fee; creating criminal offenses; authorizing a civil penalty.",
+    "url": ""
+  },
+  "ocd-bill/9ba7bbcf-17ef-4c94-b388-c2fb13863328": {
+    "identifier": "HB 1316",
+    "jurisdiction": "Maryland",
+    "latest_action": "Referred Education, Health, and Environmental Affairs",
+    "latest_date": "2020-03-17",
+    "title": "Residential Construction - Electric Vehicle Charging",
+    "url": ""
+  },
+  "ocd-bill/9c32faaa-6ab4-4989-8b08-5b38c01e49a4": {
+    "identifier": "HR 125",
+    "jurisdiction": "Texas",
+    "latest_action": "Reported enrolled",
+    "latest_date": "2025-09-02",
+    "title": "Commemorating the 40th anniversary of CapMetro.",
+    "url": ""
+  },
+  "ocd-bill/9c7c59ff-019b-4f27-99e5-98915d1905a8": {
+    "identifier": "H 3633",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5142",
+    "latest_date": "2026-02-25",
+    "title": "An Act relative to transit expansion, electrification and resiliency",
+    "url": ""
+  },
+  "ocd-bill/9c957afd-2acd-48a5-8769-f4a5ebfbf43b": {
+    "identifier": "SD 1066",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "",
+    "latest_date": "",
+    "title": "An Act promoting zero-emission vehicles",
+    "url": ""
+  },
+  "ocd-bill/9d149a53-a418-4bdf-a401-d1002f7ef142": {
+    "identifier": "SB 2775",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "PREVAILING WAGE-LOTTERY",
+    "url": ""
+  },
+  "ocd-bill/9d2e730b-2ac4-4ffd-8eab-b6ff39c1f707": {
+    "identifier": "HB 256",
+    "jurisdiction": "Maryland",
+    "latest_action": "Referred Judicial Proceedings",
+    "latest_date": "2026-03-19",
+    "title": "Motor Vehicles \u2013 Speed Monitoring Systems \u2013 Safety Corridors (Vulnerable Road User Protection Act of 2026)",
+    "url": ""
+  },
+  "ocd-bill/9dec6a45-609e-48c4-b034-2314cb57687c": {
+    "identifier": "HB 4956",
+    "jurisdiction": "Illinois",
+    "latest_action": "Added Co-Sponsor Rep. Tony M. McCombie",
+    "latest_date": "2026-04-13",
+    "title": "LOC GOV-ENERGY STORAGE SYSTEMS",
+    "url": ""
+  },
+  "ocd-bill/9dfa9cc6-8e42-4c8d-b1c0-7dc38b488b41": {
+    "identifier": "SB 346",
+    "jurisdiction": "Ohio",
+    "latest_action": "Refer to Committee",
+    "latest_date": "2020-09-01",
+    "title": "Repeal HB 6 of 133rd GA and revive prior law",
+    "url": ""
+  },
+  "ocd-bill/9e0e1941-e7b3-49d0-a82a-d7aeb0eee89e": {
+    "identifier": "HB 1091",
+    "jurisdiction": "Texas",
+    "latest_action": "Returned to committee",
+    "latest_date": "2025-05-14",
+    "title": "Relating to early voting and to related practices and procedures.",
+    "url": ""
+  },
+  "ocd-bill/9e41edb2-4755-4920-8d1e-64e9684a0821": {
+    "identifier": "HB 102",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 644",
+    "latest_date": "2026-05-26",
+    "title": "Education - Dependent Children of Active Service Members - Advance Enrollment Procedures",
+    "url": ""
+  },
+  "ocd-bill/9ea4c895-3e63-4248-b9aa-7468d698851f": {
+    "identifier": "HB 3323",
+    "jurisdiction": "Texas",
+    "latest_action": "Considered in Calendars",
+    "latest_date": "2025-05-09",
+    "title": "Relating to the responsibilities of the tabulation supervisor of a central counting station; providing a civil penalty",
+    "url": ""
+  },
+  "ocd-bill/9ee217c5-a82e-4709-b624-1521ff26ef18": {
+    "identifier": "SB 504",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 526",
+    "latest_date": "2024-05-09",
+    "title": "Motor Vehicles \u2013 Recreational Vehicle Dealer Agreements",
+    "url": ""
+  },
+  "ocd-bill/9f7052aa-f9ce-48fe-81bb-b4e8f7964540": {
+    "identifier": "SB 2652",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "CRIM CD-CONVERTIBLE PISTOLS",
+    "url": ""
+  },
+  "ocd-bill/9fa485b8-ea2f-4f65-bf44-f0ccc3f9e01a": {
+    "identifier": "H 3448",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5323",
+    "latest_date": "2026-04-06",
+    "title": "An Act setting deadlines to electrify school buses and public fleets and establishing programs to encourage private fleet electrification",
+    "url": ""
+  },
+  "ocd-bill/a1d482c6-df35-47ee-b2e4-f31466b92f2a": {
+    "identifier": "SB 53",
+    "jurisdiction": "Texas",
+    "latest_action": "Filed",
+    "latest_date": "2025-07-30",
+    "title": "Relating to the regulation of products derived from hemp, including consumable hemp products and hemp beverages and the hemp-derived cannabinoids contained in those products; requiring occupational licenses and permits; imposing fees; creating criminal offenses; authorizing civil penalties; imposing taxes.",
+    "url": ""
+  },
+  "ocd-bill/a2289ab2-d08f-4314-aaea-100198c496d1": {
+    "identifier": "HB 333",
+    "jurisdiction": "Ohio",
+    "latest_action": "Reported",
+    "latest_date": "2026-06-10T04:00:00+00:00",
+    "title": "Enact the Airspace Protection Act",
+    "url": ""
+  },
+  "ocd-bill/a270a460-1a1c-4a56-93fe-c89445bc378e": {
+    "identifier": "H 4977",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Signed by the Governor, Chapter 150 of the Acts of 2024",
+    "latest_date": "2024-08-06",
+    "title": "An Act relative to the Affordable Homes Act",
+    "url": ""
+  },
+  "ocd-bill/a2d38c0c-badb-4e4b-9d18-2640c006cbdb": {
+    "identifier": "HD 1159",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "",
+    "latest_date": "",
+    "title": "An Act promoting zero-emission vehicles",
+    "url": ""
+  },
+  "ocd-bill/a2ec98fa-5459-4512-a3fa-e202cd442c1c": {
+    "identifier": "HB 702",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-02-18T05:00:00+00:00",
+    "title": "Enact the Fairness in Mileage Reimbursement Act",
+    "url": ""
+  },
+  "ocd-bill/a2ecc8af-13e6-42fa-b55a-3ec331c9c4cd": {
+    "identifier": "SB 1",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 680",
+    "latest_date": "2023-05-16",
+    "title": "Criminal Law - Wearing, Carrying, or Transporting Firearms - Restrictions (Gun Safety Act of 2023)",
+    "url": ""
+  },
+  "ocd-bill/a2f4eb69-ca69-4dd1-9ea7-c535e790489e": {
+    "identifier": "SB 640",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-06-01",
+    "title": "LOCAL GOVERNMENT-TECH",
+    "url": ""
+  },
+  "ocd-bill/a33f386d-682e-430e-96cc-74ee30d7e0bb": {
+    "identifier": "HB 647",
+    "jurisdiction": "Ohio",
+    "latest_action": "Introduced",
+    "latest_date": "2026-06-11T04:00:00+00:00",
+    "title": "Regards publicly funded child care, the Child Care Cred Program",
+    "url": ""
+  },
+  "ocd-bill/a44e46c7-177b-4d9f-8c18-c49fc67c467b": {
+    "identifier": "HB 5366",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 19(a) / Re-referred to Rules Committee",
+    "latest_date": "2026-04-17",
+    "title": "EPA-APPLIANCE STANDARDS",
+    "url": ""
+  },
+  "ocd-bill/a45bddc1-7ea0-4757-8301-a5ec96118004": {
+    "identifier": "HB 4471",
+    "jurisdiction": "Illinois",
+    "latest_action": "Added Co-Sponsor Rep. Kelly M. Cassidy",
+    "latest_date": "2026-06-24",
+    "title": "CRIM CD-CONVERTIBLE PISTOLS",
+    "url": ""
+  },
+  "ocd-bill/a550c96b-789b-42fc-9849-c3d67ca676ed": {
+    "identifier": "SD 2221",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "House concurred",
+    "latest_date": "2025-02-27",
+    "title": "An Act closing a corporate tax haven loophole",
+    "url": ""
+  },
+  "ocd-bill/a55c1464-002e-47a3-b1ad-4646347875ed": {
+    "identifier": "SB 988",
+    "jurisdiction": "Texas",
+    "latest_action": "Failed to receive affirmative vote in comm.",
+    "latest_date": "2025-05-22",
+    "title": "Relating to increasing the criminal penalty for the offense of criminal mischief involving impairment of a motor fuel pump or electric vehicle charging station.",
+    "url": ""
+  },
+  "ocd-bill/a6cc6aaf-f051-41cb-a410-7867de5e0aab": {
+    "identifier": "HB 109",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2025-02-26T05:00:00+00:00",
+    "title": "Regards local regulation, taxing of short-term rental properties",
+    "url": ""
+  },
+  "ocd-bill/a76627f4-d246-4838-8840-706301cf16f9": {
+    "identifier": "H 4722",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "New draft substituted, see H4789",
+    "latest_date": "2024-06-27",
+    "title": "An Act relative to strengthening Massachusetts' economic leadership",
+    "url": ""
+  },
+  "ocd-bill/a7ebaf33-86bb-458f-a1d3-04afdfda56f8": {
+    "identifier": "H 4348",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "New draft substituted, see H4515",
+    "latest_date": "2022-03-01",
+    "title": "An Act advancing offshore wind and clean energy",
+    "url": ""
+  },
+  "ocd-bill/a810a5d5-2f1d-4c9b-8648-b95f5284ef54": {
+    "identifier": "SB 197",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2025-05-14T04:00:00+00:00",
+    "title": "Legalize, tax internet gambling; make other Gambling Law changes",
+    "url": ""
+  },
+  "ocd-bill/a8cea3bd-1c25-427c-9e95-570f41c87f5c": {
+    "identifier": "HB 201",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 102",
+    "latest_date": "2023-04-24",
+    "title": "Creation of a State Debt \u2013 Maryland Consolidated Capital Bond Loan of 2023, and the Maryland Consolidated Capital Bond Loans of 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, and 2022",
+    "url": ""
+  },
+  "ocd-bill/a9a7e1b9-4beb-403c-a24c-b29f85f5c357": {
+    "identifier": "SB 31",
+    "jurisdiction": "Texas",
+    "latest_action": "Filed",
+    "latest_date": "2025-08-15",
+    "title": "Relating to the regulation of the cultivation, manufacture, processing, distribution, sale, testing, transportation, delivery, transfer, possession, use, and taxation of cannabis and cannabis products and the local regulation of licensed cannabis growers, cannabis establishments, cannabis testing facilities, and cannabis secure transporters; providing for expunction of records relating to certain decriminalized conduct; authorizing the imposition of fees; requiring an occupational license; creating a criminal offense; imposing a tax.",
+    "url": ""
+  },
+  "ocd-bill/aaa6c513-8649-435a-a625-49af4918bf6c": {
+    "identifier": "SB 106",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/04 at 11:00 a.m.",
+    "latest_date": "2026-01-20",
+    "title": "Vehicle Laws - Vehicle Emissions Inspection Program - Repeal",
+    "url": ""
+  },
+  "ocd-bill/ab053035-aa48-462a-8fa2-b08f852de81c": {
+    "identifier": "SB 2166",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on 9/1/25",
+    "latest_date": "2025-06-20",
+    "title": "Relating to testing of voting tabulation equipment.",
+    "url": ""
+  },
+  "ocd-bill/ab8bd50e-9e0d-4495-aaa9-0e2c31351fd2": {
+    "identifier": "HB 3474",
+    "jurisdiction": "Texas",
+    "latest_action": "See remarks for effective date",
+    "latest_date": "2023-06-13",
+    "title": "Relating to the operation and administration of and practices and procedures regarding proceedings in the judicial branch of state government, including the service of process and delivery of documents related to the proceedings, the administration of oaths, and the management of the Texas Indigent Defense Commission, and the composition of certain juvenile boards; establishing a civil penalty; increasing certain court costs; authorizing fees.",
+    "url": ""
+  },
+  "ocd-bill/abcc92bf-dcea-4689-a074-dd42caa8e070": {
+    "identifier": "SB 749",
+    "jurisdiction": "Maryland",
+    "latest_action": "Enacted under Article II, Section 17(c) of the Maryland Constitution - Chapter 628",
+    "latest_date": "2020-05-08",
+    "title": "Annual Corrective Bill",
+    "url": ""
+  },
+  "ocd-bill/abced924-497e-43d4-a142-1cece1269084": {
+    "identifier": "HB 605",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 525",
+    "latest_date": "2024-05-09",
+    "title": "Motor Vehicles - Recreational Vehicle Dealer Agreements",
+    "url": ""
+  },
+  "ocd-bill/ad03f6d0-5bdf-42bc-b3a0-d6f28ccf458c": {
+    "identifier": "HB 8",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/05 at 1:00 p.m.",
+    "latest_date": "2026-01-19",
+    "title": "Vehicle Laws - Dangerous Driver Abatement Program - Establishment (Dangerous Driver Accountability Act)",
+    "url": ""
+  },
+  "ocd-bill/ae974e9b-c09f-4b30-87aa-598147aa0f3c": {
+    "identifier": "HB 6",
+    "jurisdiction": "Ohio",
+    "latest_action": "Effective 10/22/19",
+    "latest_date": "2019-10-22T04:00:00+00:00",
+    "title": "Creates Ohio Clean Air Program",
+    "url": ""
+  },
+  "ocd-bill/aea4413c-2ed8-45c1-ae03-a7a4849736b0": {
+    "identifier": "H 5280",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Reported, in part, by H5470",
+    "latest_date": "2026-06-03",
+    "title": "An Act making appropriations for the fiscal year 2026 to provide for supplementing certain existing appropriations and for certain other activities and projects",
+    "url": ""
+  },
+  "ocd-bill/af3df971-4e86-412a-a153-d7b3de706b6d": {
+    "identifier": "HB 1395",
+    "jurisdiction": "Maryland",
+    "latest_action": "Unfavorable Report by Economic Matters",
+    "latest_date": "2017-03-14",
+    "title": "Solar Energy Grant Program - Energy Storage",
+    "url": ""
+  },
+  "ocd-bill/aff580f5-7928-4e61-8c53-5daef6828d1d": {
+    "identifier": "HB 1339",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 3/06 at 1:00 p.m.",
+    "latest_date": "2020-02-10",
+    "title": "Sales and Use Tax and Personal Property Tax - Exemptions - Data Centers",
+    "url": ""
+  },
+  "ocd-bill/b0006cfc-43f0-4b3a-9318-ab0e3a630001": {
+    "identifier": "HB 1091",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 4/03 at 1:00 p.m.",
+    "latest_date": "2018-03-22",
+    "title": "Off-Highway Recreational Vehicle Fund - Establishment",
+    "url": ""
+  },
+  "ocd-bill/b02a3d7d-6d81-43e1-a0d3-a2a2d124e665": {
+    "identifier": "SB 3790",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "USE/OCC TX-MULTISTATE",
+    "url": ""
+  },
+  "ocd-bill/b13a585b-a23c-4fa1-9b94-7aeae938c3b6": {
+    "identifier": "HB 472",
+    "jurisdiction": "Ohio",
+    "latest_action": "Veto receipt",
+    "latest_date": "2026-06-25T04:00:00+00:00",
+    "title": "Waive ID, birth certificate fees for homeless individuals",
+    "url": ""
+  },
+  "ocd-bill/b1b9cda1-eb22-471b-8783-f9710ecfc70c": {
+    "identifier": "SB 386",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/24 at 1:00 p.m.",
+    "latest_date": "2026-02-09",
+    "title": "Electricity Transmission and Distribution, Energy Storage, and Maryland Strategic Energy Investment Fund (Lower Bills and Local Power Act of 2026)",
+    "url": ""
+  },
+  "ocd-bill/b29324ad-92f5-446f-87b1-52bcf6d20ee4": {
+    "identifier": "HB 434",
+    "jurisdiction": "Ohio",
+    "latest_action": "Effective 11/25/25",
+    "latest_date": "2025-11-25T05:00:00+00:00",
+    "title": "Exempt military driver's license applicants from driver's ed",
+    "url": ""
+  },
+  "ocd-bill/b3ac8881-cbf3-4115-ae13-80eb10fd4932": {
+    "identifier": "H 805",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5026",
+    "latest_date": "2022-09-12",
+    "title": "An Act fostering voting opportunities, trust, equity, and security",
+    "url": ""
+  },
+  "ocd-bill/b438a247-16d1-43ba-98dd-9b5bb3bd3da3": {
+    "identifier": "HB 3266",
+    "jurisdiction": "Illinois",
+    "latest_action": "Added as Alternate Co-Sponsor Sen. Graciela Guzm\u00e1n",
+    "latest_date": "2026-05-15",
+    "title": "PREVAILING WAGE-TIF DISTRICT",
+    "url": ""
+  },
+  "ocd-bill/b5d8ac17-62e3-4941-9f43-dc12a533ddab": {
+    "identifier": "H 5527",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Hearing scheduled for 07/02/2026 from 01:00 PM-05:00 PM in A-1",
+    "latest_date": "2026-06-22",
+    "title": "An Act relative to Massachusetts winning global investment, talent, and innovation",
+    "url": ""
+  },
+  "ocd-bill/b6f0bd30-b891-4ad2-87b0-97df53f04ab6": {
+    "identifier": "HB 2226",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to Ways & Means",
+    "latest_date": "2023-03-09",
+    "title": "Relating to state and municipal motor fuel taxes; providing civil penalties; creating criminal offenses; requiring occupational licenses; authorizing the imposition of taxes; providing for increases and decreases in the rates of taxes.",
+    "url": ""
+  },
+  "ocd-bill/b7bb6465-fb0f-4194-9dc4-703854f3e8ce": {
+    "identifier": "SB 283",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 5",
+    "latest_date": "2026-04-08",
+    "title": "Creation of a State Debt \u2013 Maryland Consolidated Capital Bond Loan of 2026, and the Maryland Consolidated Capital Bond Loans of 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, and 2025",
+    "url": ""
+  },
+  "ocd-bill/b856ca03-90dc-40ff-98ea-6c5f9822b0d7": {
+    "identifier": "SB 423",
+    "jurisdiction": "Ohio",
+    "latest_action": "Introduced",
+    "latest_date": "2026-06-16T04:00:00+00:00",
+    "title": "Regards employment status of health care workers for certain laws",
+    "url": ""
+  },
+  "ocd-bill/b86048a3-5afe-4ccd-a198-afd0282870f6": {
+    "identifier": "SB 182",
+    "jurisdiction": "Maryland",
+    "latest_action": "First Reading Budget and Taxation",
+    "latest_date": "2023-01-20",
+    "title": "Creation of a State Debt - Maryland Consolidated Capital Bond Loan of 2023, and the Maryland Consolidated Capital Bond Loans of 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, and 2022",
+    "url": ""
+  },
+  "ocd-bill/b876018b-3b3c-4d8d-8bea-ac7f91899451": {
+    "identifier": "HR 4",
+    "jurisdiction": "Texas",
+    "latest_action": "Signed in the House",
+    "latest_date": "2025-01-28",
+    "title": "Adopting the House Rules of Procedure for the 89th Legislature.",
+    "url": ""
+  },
+  "ocd-bill/b99e4f73-bf70-43c8-b83e-757af43064c8": {
+    "identifier": "HB 500",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective immediately",
+    "latest_date": "2025-06-22",
+    "title": "Relating to making supplemental appropriations and reductions in appropriations and giving direction and adjustment authority regarding appropriations.",
+    "url": ""
+  },
+  "ocd-bill/ba340c50-a99c-4178-8e8a-76eaf2053c36": {
+    "identifier": "HB 2191",
+    "jurisdiction": "Texas",
+    "latest_action": "Reported favorably as substituted",
+    "latest_date": "2023-05-05",
+    "title": "Relating to mobile source emissions reductions and transportation electrification.",
+    "url": ""
+  },
+  "ocd-bill/ba9ba38d-4eb1-4616-864a-34660d05abb2": {
+    "identifier": "H 4502",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Bill reported favorably by committee and referred to the committee on House Ways and Means",
+    "latest_date": "2024-04-04",
+    "title": "An Act to promote transportation electrification infrastructure",
+    "url": ""
+  },
+  "ocd-bill/bb364773-dd84-4237-846f-56a719b82247": {
+    "identifier": "H 2490",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Reporting date extended to Friday, July 31, 2026",
+    "latest_date": "2026-06-17",
+    "title": "An Act establishing a physical therapy licensure compact",
+    "url": ""
+  },
+  "ocd-bill/bb76e6e1-63c1-4c55-a5c7-9beb33f9cdf3": {
+    "identifier": "H 3288",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Senate concurred",
+    "latest_date": "2022-06-09",
+    "title": "An Act transitioning Massachusetts to clean electricity, heating and transportation",
+    "url": ""
+  },
+  "ocd-bill/bf92f5be-ac44-49ca-b17c-53eebdb90e00": {
+    "identifier": "HB 733",
+    "jurisdiction": "Ohio",
+    "latest_action": "Introduced",
+    "latest_date": "2026-06-11T04:00:00+00:00",
+    "title": "Include maple syrup, maple product production to agriculture law",
+    "url": ""
+  },
+  "ocd-bill/bfaba84d-1f6a-4178-af2a-828f888f0df8": {
+    "identifier": "HB 355",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2025-06-18T04:00:00+00:00",
+    "title": "Increase vote threshold for local taxes subject to voter approval",
+    "url": ""
+  },
+  "ocd-bill/bfb33800-3f58-4426-8e49-1b83abd3ad15": {
+    "identifier": "HB 837",
+    "jurisdiction": "Maryland",
+    "latest_action": "Enacted under Article II, Section 17(b) of the Maryland Constitution - Chapter 26",
+    "latest_date": "2022-04-09",
+    "title": "Cannabis Reform",
+    "url": ""
+  },
+  "ocd-bill/c06b4c74-ea3e-4f96-9989-38f815158d80": {
+    "identifier": "HB 1428",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 3/05 at 1:00 p.m.",
+    "latest_date": "2024-02-13",
+    "title": "Public Safety - Electric Vehicle Charging Station Safety Commission",
+    "url": ""
+  },
+  "ocd-bill/c237ca1e-e18b-4d8a-8efb-89e58f2ec811": {
+    "identifier": "S 2225",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see S2711",
+    "latest_date": "2022-02-22",
+    "title": "An Act to prevent the worst effects of our climate emergency by providing policy pathways to achieve net zero emissions",
+    "url": ""
+  },
+  "ocd-bill/c38b66f2-2613-4049-978c-e881e372e9ee": {
+    "identifier": "HB 79",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/04 at 1:00 p.m.",
+    "latest_date": "2026-01-19",
+    "title": "Climate Solutions Affordability Act of 2026",
+    "url": ""
+  },
+  "ocd-bill/c4cd7ad8-7c0d-41ca-82d3-6cc420bf50ad": {
+    "identifier": "SB 447",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-06-02T04:00:00+00:00",
+    "title": "Exempt sales of aircraft to nonresidents from sales tax",
+    "url": ""
+  },
+  "ocd-bill/c4ef14c4-8a1f-402a-9a18-33c1d21e99ef": {
+    "identifier": "HB 3422",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to State Affairs",
+    "latest_date": "2025-03-21",
+    "title": "Relating to the removal of battery energy storage facilities.",
+    "url": ""
+  },
+  "ocd-bill/c54a89a5-24dd-49f8-9a58-77f8dfa51899": {
+    "identifier": "SB 102",
+    "jurisdiction": "Ohio",
+    "latest_action": "Introduced",
+    "latest_date": "2026-06-16T04:00:00+00:00",
+    "title": "Enact the Gus Frangos Act",
+    "url": ""
+  },
+  "ocd-bill/c55d15c4-c041-4f3c-9199-f224406bcd86": {
+    "identifier": "HB 1846",
+    "jurisdiction": "Texas",
+    "latest_action": "Received from the House",
+    "latest_date": "2025-04-23",
+    "title": "Relating to the establishment of the Electric Truck Advisory Council.",
+    "url": ""
+  },
+  "ocd-bill/c5cdd9b8-664f-4f76-8eb7-5c508aae5e7b": {
+    "identifier": "HB 15",
+    "jurisdiction": "Ohio",
+    "latest_action": "Refer to Committee",
+    "latest_date": "2017-02-08",
+    "title": "Address distribution of kilowatt hour tax",
+    "url": ""
+  },
+  "ocd-bill/c5e75156-4bab-4b4b-9d13-10b6c0fc658c": {
+    "identifier": "H 4744",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "New draft substituted, see H5151",
+    "latest_date": "2026-02-26",
+    "title": "An Act relative to energy affordability, clean power and economic competitiveness",
+    "url": ""
+  },
+  "ocd-bill/c5f505cc-48b5-4343-9e0d-1acab03fc1e4": {
+    "identifier": "HD 2655",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "",
+    "latest_date": "",
+    "title": "An Act promoting price transparency for electric vehicle charging stations",
+    "url": ""
+  },
+  "ocd-bill/c7909b78-3d04-407a-8a14-c73fccfe548d": {
+    "identifier": "HB 74",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to Transportation",
+    "latest_date": "2025-05-12",
+    "title": "Relating to the creation of the Puerto Verde Port Authority District; providing authority to issue bonds; providing authority to impose assessments, fees, and taxes; granting a limited power of eminent domain.",
+    "url": ""
+  },
+  "ocd-bill/c7a485af-4242-4974-be75-3037e25738df": {
+    "identifier": "HB 4524",
+    "jurisdiction": "Illinois",
+    "latest_action": "Added Co-Sponsor Rep. Abdelnasser Rashid",
+    "latest_date": "2026-04-15",
+    "title": "PLUG-IN SOLAR ENERGY SYSTEMS",
+    "url": ""
+  },
+  "ocd-bill/c88e4dbc-a2b0-4aa7-ae8a-8b69e0551181": {
+    "identifier": "H 3492",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5323",
+    "latest_date": "2026-04-06",
+    "title": "An Act relative to emergency back up power at gasoline stations",
+    "url": ""
+  },
+  "ocd-bill/ca50d488-2bbd-4b62-b898-2f216fd6cac9": {
+    "identifier": "SB 320",
+    "jurisdiction": "Maryland",
+    "latest_action": "First Reading Budget and Taxation",
+    "latest_date": "2025-01-15",
+    "title": "Creation of a State Debt - Maryland Consolidated Capital Bond Loan of 2025, and the Maryland Consolidated Capital Bond Loans of 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, and 2024",
+    "url": ""
+  },
+  "ocd-bill/ca7c6552-ed1a-4b69-a92c-0b527e932ede": {
+    "identifier": "HB 314",
+    "jurisdiction": "Ohio",
+    "latest_action": "Introduced",
+    "latest_date": "2026-06-11T04:00:00+00:00",
+    "title": "Limit certain public record requests; allow contractor response",
+    "url": ""
+  },
+  "ocd-bill/cc08a16b-23ee-49f0-aeda-2ac34f89d903": {
+    "identifier": "HB 271",
+    "jurisdiction": "Maryland",
+    "latest_action": "Enacted under Article II, Section 17(b) of the Maryland Constitution - Chapter 24",
+    "latest_date": "2017-04-06",
+    "title": "Maryland Transit Administration - Farebox Recovery Rate - Repeal",
+    "url": ""
+  },
+  "ocd-bill/cc0c4a6f-cf0b-4fe7-a284-b81004808036": {
+    "identifier": "SB 2327",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "DCFS-CULTURAL OMBUDSMAN",
+    "url": ""
+  },
+  "ocd-bill/ccabaac0-f2c4-49be-bc2a-fba1f7306ed9": {
+    "identifier": "HB 1426",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 3/09 at 1:00 p.m.",
+    "latest_date": "2020-02-11",
+    "title": "Economic Development - Advanced Clean Energy and Clean Energy Innovation Investments and Initiatives",
+    "url": ""
+  },
+  "ocd-bill/cd1261d7-1db1-4a5e-8896-021e1041ede3": {
+    "identifier": "S 2554",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Reported by S2924",
+    "latest_date": "2022-06-09",
+    "title": "An Act fostering voter opportunities, trust, equity and security",
+    "url": ""
+  },
+  "ocd-bill/cd65c3ac-335e-4bfd-a1f3-438bfb1f00b6": {
+    "identifier": "SB 106",
+    "jurisdiction": "Ohio",
+    "latest_action": "Signed By The Governor",
+    "latest_date": "2026-06-24T04:00:00+00:00",
+    "title": "Regulate the ownership of electric vehicle charging stations",
+    "url": ""
+  },
+  "ocd-bill/cdf3f262-3b05-41d8-9e9d-0dd02d6169b5": {
+    "identifier": "HB 437",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 447",
+    "latest_date": "2024-05-09",
+    "title": "Maryland Zero Emission Electric Vehicle Infrastructure Council - Membership",
+    "url": ""
+  },
+  "ocd-bill/d022b440-1db8-4dfd-86ec-65282f215001": {
+    "identifier": "H 4726",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Reported by H4977",
+    "latest_date": "2024-08-01",
+    "title": "An Act relative to the Affordable Homes Act",
+    "url": ""
+  },
+  "ocd-bill/d07b736d-9551-4423-81c3-f2943d304b18": {
+    "identifier": "HB 3278",
+    "jurisdiction": "Texas",
+    "latest_action": "Failed to receive affirmative vote in comm.",
+    "latest_date": "2025-04-23",
+    "title": "Relating to the study of and incentives for the use of solar and wind energy.",
+    "url": ""
+  },
+  "ocd-bill/d1598347-244b-41a2-bc20-800f230b469a": {
+    "identifier": "SB 2997",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "PROCUREMENT-VARIOUS",
+    "url": ""
+  },
+  "ocd-bill/d2308470-9c10-4db4-b879-ecf402a6f37f": {
+    "identifier": "HB 56",
+    "jurisdiction": "Ohio",
+    "latest_action": "Refer to Committee",
+    "latest_date": "2019-02-13",
+    "title": "Allocate kilowatt-hour excise tax for mine reclamation/safety",
+    "url": ""
+  },
+  "ocd-bill/d28b98a4-eb8e-410b-93fa-1682a75ecc4e": {
+    "identifier": "HB 776",
+    "jurisdiction": "Maryland",
+    "latest_action": "Unfavorable Report by Environment and Transportation",
+    "latest_date": "2019-03-11",
+    "title": "Vehicle Laws - Speed Monitoring Systems - Operation in School Zones",
+    "url": ""
+  },
+  "ocd-bill/d2d0b4e6-5ccd-421e-b324-0411b2a5b841": {
+    "identifier": "H 3477",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5323",
+    "latest_date": "2026-04-06",
+    "title": "An Act relative to clean lighting and appliance efficiency standards",
+    "url": ""
+  },
+  "ocd-bill/d364426f-8571-4789-9521-2acde44d17e8": {
+    "identifier": "SB 1495",
+    "jurisdiction": "Texas",
+    "latest_action": "Failed to receive affirmative vote in comm.",
+    "latest_date": "2025-05-10",
+    "title": "Relating to the establishment of an Electric Vehicle Supply Equipment Advisory Board.",
+    "url": ""
+  },
+  "ocd-bill/d37a49e0-6fd2-4f81-812c-c91ca1f3ad5b": {
+    "identifier": "HB 4504",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on . . . . . . . . . . . . . . .",
+    "latest_date": "2023-06-12",
+    "title": "Relating to the nonsubstantive revision of certain provisions of the Code of Criminal Procedure, including conforming amendments.",
+    "url": ""
+  },
+  "ocd-bill/d3d8820b-39cc-4148-a68c-f952bbddc56d": {
+    "identifier": "HB 1520",
+    "jurisdiction": "Maryland",
+    "latest_action": "Referred to interim study by Environment and Transportation",
+    "latest_date": "2017-03-27",
+    "title": "Vehicle Laws - Personal Motor Vehicle Rentals",
+    "url": ""
+  },
+  "ocd-bill/d46d3f14-8342-4abf-848c-94386ef5a257": {
+    "identifier": "SB 2659",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to Business & Commerce",
+    "latest_date": "2025-04-03",
+    "title": "Relating to recycling of certain renewable energy components; authorizing an administrative penalty.",
+    "url": ""
+  },
+  "ocd-bill/d711d78d-281b-46f6-972f-9c43f1bea5c9": {
+    "identifier": "SB 890",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 3/10 at 1:00 p.m.",
+    "latest_date": "2020-02-07",
+    "title": "Clean Energy Attribute Credits and Procurement",
+    "url": ""
+  },
+  "ocd-bill/d7657ac6-b7f3-4e64-a15f-6614d63ded6f": {
+    "identifier": "HB 929",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-05-20T04:00:00+00:00",
+    "title": "Limit all limited term licenses, ID cards to one-year expiration",
+    "url": ""
+  },
+  "ocd-bill/d7d94e9e-e7c6-4996-900e-c58b09329ec4": {
+    "identifier": "HB 213",
+    "jurisdiction": "Texas",
+    "latest_action": "Filed",
+    "latest_date": "2025-07-28",
+    "title": "Relating to the organization, powers, and authority of the Texas State Guard, including the powers and authority of the adjutant general and governor relating to the Texas State Guard.",
+    "url": ""
+  },
+  "ocd-bill/d8c94bf0-688c-4216-8cdd-42a9f3185878": {
+    "identifier": "HB 2",
+    "jurisdiction": "Texas",
+    "latest_action": "See remarks for effective date",
+    "latest_date": "2025-06-20",
+    "title": "Relating to public education and public school finance.",
+    "url": ""
+  },
+  "ocd-bill/d8d1b85f-522b-409e-8624-7ed5508d3f4c": {
+    "identifier": "H 5510",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Published as amended, see H5518",
+    "latest_date": "2026-06-17",
+    "title": "Amendment H.5510",
+    "url": ""
+  },
+  "ocd-bill/d96b70fb-a771-4f28-9e9a-4fee46572690": {
+    "identifier": "SB 1721",
+    "jurisdiction": "Texas",
+    "latest_action": "Left pending in committee",
+    "latest_date": "2019-04-10",
+    "title": "Relating to the creation of regional transit authorities; granting the power of eminent domain; providing authority to issue bonds and charge fees; creating a criminal offense.",
+    "url": ""
+  },
+  "ocd-bill/d98f6db7-ee26-455a-9400-feaf2344aaf1": {
+    "identifier": "H 5518",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "See S3064",
+    "latest_date": "2026-06-17",
+    "title": "Amendment H.5518",
+    "url": ""
+  },
+  "ocd-bill/d9b3c901-77d6-4c54-9ab3-c91faad45a0d": {
+    "identifier": "H 5386",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a new draft, see H5527",
+    "latest_date": "2026-06-22",
+    "title": "An Act relative to Massachusetts winning global investment, talent, and innovation",
+    "url": ""
+  },
+  "ocd-bill/dabd4537-9b95-41c4-a4dc-fe292cfa8eac": {
+    "identifier": "HB 100",
+    "jurisdiction": "Maryland",
+    "latest_action": "Assigned a chapter number - Chapter 565",
+    "latest_date": "2019-05-13",
+    "title": "Budget Bill (Fiscal Year 2020)",
+    "url": ""
+  },
+  "ocd-bill/dc2c0d71-4391-411e-adce-73efc73f2921": {
+    "identifier": "H 4685",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see  H5353 (under House Rule 27)",
+    "latest_date": "2026-04-13",
+    "title": "An Act requiring local approval for battery storage facility permitting",
+    "url": ""
+  },
+  "ocd-bill/dd9e97f1-7ba7-4852-b977-c143196869f7": {
+    "identifier": "SB 397",
+    "jurisdiction": "Maryland",
+    "latest_action": "Enacted under Article II, Section 17(c) of the Maryland Constitution - Chapter 640",
+    "latest_date": "2020-05-08",
+    "title": "Sales and Use Tax and Personal Property Tax - Exemptions - Data Centers",
+    "url": ""
+  },
+  "ocd-bill/ddc1e6ef-8022-45b8-98c6-d00550674e14": {
+    "identifier": "H 4459",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a new draft, see H4722",
+    "latest_date": "2024-06-05",
+    "title": "An Act relative to strengthening Massachusetts' economic leadership",
+    "url": ""
+  },
+  "ocd-bill/de2ff404-a8ed-4f03-bbb8-e97126542851": {
+    "identifier": "S 3100",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "See H5501",
+    "latest_date": "2026-05-21",
+    "title": "Amendment S.3100",
+    "url": ""
+  },
+  "ocd-bill/de971a3a-ff7a-46d6-adfa-1502f7ac4465": {
+    "identifier": "HB 3824",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on 9/1/25",
+    "latest_date": "2025-06-20",
+    "title": "Relating to fire safety standards and emergency operations plans for the operation of battery energy storage facilities; providing administrative penalties.",
+    "url": ""
+  },
+  "ocd-bill/df3138c4-07c7-418e-a6c7-376701034821": {
+    "identifier": "HB 5633",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to State Affairs",
+    "latest_date": "2025-04-07",
+    "title": "Relating to the operation of Texas backup power packages.",
+    "url": ""
+  },
+  "ocd-bill/df49fcc6-bea5-4059-9a6b-88a6a441d943": {
+    "identifier": "S 468",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H5026",
+    "latest_date": "2022-09-12",
+    "title": "An Act relative to expanding voting options in Massachusetts",
+    "url": ""
+  },
+  "ocd-bill/e0ad9ccc-f1ba-44a1-9208-30dc6b20e1e1": {
+    "identifier": "SB 1646",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective immediately",
+    "latest_date": "2025-05-30",
+    "title": "Relating to criminal conduct involving the theft, damage, or destruction of copper or brass or involving the unauthorized possession of certain copper or brass material, to transactions of metal recycling entities involving certain copper or brass material, to training on identifying certain copper or brass material, and to studying the effect of certain regulations on incidents of theft of copper or brass material; creating criminal offenses; increasing criminal penalties; providing an administrative penalty.",
+    "url": ""
+  },
+  "ocd-bill/e16724be-1dd9-44d9-9c11-5d74f217832d": {
+    "identifier": "SB 373",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/19 at 1:00 p.m.",
+    "latest_date": "2026-02-09",
+    "title": "Environment - Regional Greenhouse Gas Initiative - Withdrawal (Restoring Energy Freedom Act)",
+    "url": ""
+  },
+  "ocd-bill/e2dbbd9f-888a-43f9-95a8-c21245e9c4b9": {
+    "identifier": "S 3143",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Placed in the Orders of the Day for Wednesday, July 1, 2026",
+    "latest_date": "2026-06-25",
+    "title": "Amendment S.3143",
+    "url": ""
+  },
+  "ocd-bill/e3028ed0-56fd-414a-b305-ef50641cbc7b": {
+    "identifier": "SB 3037",
+    "jurisdiction": "Texas",
+    "latest_action": "See remarks for effective date",
+    "latest_date": "2025-05-29",
+    "title": "Relating to the creation of La Cima Municipal Management District No. 1; providing authority to issue bonds; providing authority to impose assessments, fees, and taxes; granting a limited power of eminent domain.",
+    "url": ""
+  },
+  "ocd-bill/e467aa97-9b58-43e3-93a6-2675b68c2d5d": {
+    "identifier": "S 3062",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Bill reported favorably by committee and referred to the committee on Senate Ways and Means",
+    "latest_date": "2026-04-23",
+    "title": "An Act relative to digital right to repair",
+    "url": ""
+  },
+  "ocd-bill/e493a47f-1163-4b09-bd88-f69effc2634b": {
+    "identifier": "S 556",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a new draft, see S2569",
+    "latest_date": "2025-08-11",
+    "title": "An Act establishing a lithium-ion battery stewardship program",
+    "url": ""
+  },
+  "ocd-bill/e656a358-af40-41f7-b502-ec0323381336": {
+    "identifier": "SB 219",
+    "jurisdiction": "Ohio",
+    "latest_action": "Effective 9/23/26",
+    "latest_date": "2026-09-23T04:00:00+00:00",
+    "title": "Revise the law governing oil and gas wells",
+    "url": ""
+  },
+  "ocd-bill/e6e39c8c-4fcc-42cc-8733-1844ee61fa6d": {
+    "identifier": "HB 948",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-05-20T04:00:00+00:00",
+    "title": "Regards electric bicycle operation, education, and traffic safety",
+    "url": ""
+  },
+  "ocd-bill/e6e476b1-4908-41ef-9ba2-fb58d408c76c": {
+    "identifier": "HB 1365",
+    "jurisdiction": "Maryland",
+    "latest_action": "Unfavorable Report by Environment and Transportation",
+    "latest_date": "2018-03-12",
+    "title": "Vehicle Laws - Speed Monitoring Systems - Operation in School Zones (Truth in Speed Cameras Act of 2018)",
+    "url": ""
+  },
+  "ocd-bill/e77709a8-4167-4c56-9ef3-585fd7ac71f4": {
+    "identifier": "S 2041",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Reporting date extended to Thursday June 25, 2026",
+    "latest_date": "2026-04-01",
+    "title": "An Act closing a corporate tax haven loophole",
+    "url": ""
+  },
+  "ocd-bill/e84d9ced-d66f-4fc0-801c-89880f2c2ae9": {
+    "identifier": "HB 143",
+    "jurisdiction": "Ohio",
+    "latest_action": "Refer to Committee",
+    "latest_date": "2017-03-29",
+    "title": "Clarify definition of electric distribution company for tax",
+    "url": ""
+  },
+  "ocd-bill/e896f049-ed90-4df1-b9e7-e1015f0cd36b": {
+    "identifier": "HB 114",
+    "jurisdiction": "Ohio",
+    "latest_action": "Refer to Committee",
+    "latest_date": "2017-04-26",
+    "title": "Revise energy efficiency provisions",
+    "url": ""
+  },
+  "ocd-bill/e91007f3-5338-4388-92e9-77a20ac9df09": {
+    "identifier": "HB 1401",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 254",
+    "latest_date": "2019-04-30",
+    "title": "Vehicle Laws \u2013 Overweight Vehicles \u2013 Heavy Weight Port Corridor Permit",
+    "url": ""
+  },
+  "ocd-bill/eadea3a2-b5a2-4d1c-9dc9-433ff3e857d1": {
+    "identifier": "HR 4",
+    "jurisdiction": "Texas",
+    "latest_action": "Reported enrolled",
+    "latest_date": "2021-01-15",
+    "title": "Adopting the rules of the House for the 87th Legislature.",
+    "url": ""
+  },
+  "ocd-bill/eb533e87-cdb3-4a4f-ae80-004a263de7f9": {
+    "identifier": "SB 280",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2026-05-27T04:00:00+00:00",
+    "title": "Allow registration of a humvee as a historical motor vehicle",
+    "url": ""
+  },
+  "ocd-bill/eb98e4c4-77e9-4bcc-ac6a-e2d53fe19d70": {
+    "identifier": "SB 1824",
+    "jurisdiction": "Texas",
+    "latest_action": "Left pending in committee",
+    "latest_date": "2025-03-27",
+    "title": "Relating to the removal of battery energy storage facilities.",
+    "url": ""
+  },
+  "ocd-bill/ed9c193f-e2a5-4733-a069-0c69019b92f2": {
+    "identifier": "HB 101",
+    "jurisdiction": "Maryland",
+    "latest_action": "Referred Judicial Proceedings",
+    "latest_date": "2023-03-03",
+    "title": "Condominiums - Common Elements - Clean Energy Equipment",
+    "url": ""
+  },
+  "ocd-bill/efac2602-e5ac-4c86-82b7-dcb46084693b": {
+    "identifier": "SB 145",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2025-03-19T04:00:00+00:00",
+    "title": "Rename the Department of Development; modify the housing law",
+    "url": ""
+  },
+  "ocd-bill/f0c639f4-df38-4314-8054-110597bcc971": {
+    "identifier": "H 2873",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see H4405",
+    "latest_date": "2020-02-10",
+    "title": "An Act promoting zero-emission vehicles",
+    "url": ""
+  },
+  "ocd-bill/f149d62d-9e6a-461b-8c2a-18e469aa59cd": {
+    "identifier": "S 1197",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order (under JR10), see S3129",
+    "latest_date": "2026-06-18",
+    "title": "An Act to strengthen laws combatting human trafficking and protecting survivors of modern-day slavery",
+    "url": ""
+  },
+  "ocd-bill/f17ba7fe-5f15-4f60-90ff-4e89e586829d": {
+    "identifier": "HB 295",
+    "jurisdiction": "Ohio",
+    "latest_action": "Referred to committee",
+    "latest_date": "2025-05-21T04:00:00+00:00",
+    "title": "Expedite unauthorized occupant removal; prohibit fraudulent deeds",
+    "url": ""
+  },
+  "ocd-bill/f293a79c-7b86-44bc-9671-f46ed690f72e": {
+    "identifier": "HD 5791",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Placed on file",
+    "latest_date": "2026-04-09",
+    "title": "A communication from the Pension Reserves Investment Management Board (see Section 23(2A)(e)(xi) of Chapter 32 of the General Laws) submitting its fiscal year 2025 fourth quarterly report",
+    "url": ""
+  },
+  "ocd-bill/f29b6ad8-cd21-42c6-9052-21eedd55abfc": {
+    "identifier": "HB 4045",
+    "jurisdiction": "Illinois",
+    "latest_action": "Added Co-Sponsor Rep. Bob Morgan",
+    "latest_date": "2026-04-22",
+    "title": "CONVERTIBLE PISTOLS",
+    "url": ""
+  },
+  "ocd-bill/f536a5be-e27b-4d53-a063-5ea84d09b682": {
+    "identifier": "SB 3944",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "USE/OCC TX-SOLAR PANELS",
+    "url": ""
+  },
+  "ocd-bill/f60ccdd6-9e38-42f1-b53a-6a3aeac332d8": {
+    "identifier": "H 5294",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Accompanied a study order, see  H5480 (under House Rule 27)",
+    "latest_date": "2026-06-08",
+    "title": "An Act establishing a temporary moratorium on large scale ground-mounted solar photovoltaic installations and battery energy storage systems in the town of Worthington",
+    "url": ""
+  },
+  "ocd-bill/f789c05a-6e2d-46b3-aa5f-01cb34b30e91": {
+    "identifier": "HB 1481",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective immediately",
+    "latest_date": "2025-06-20",
+    "title": "Relating to school district and open-enrollment charter school policies regarding student use of personal communication devices.",
+    "url": ""
+  },
+  "ocd-bill/f7cf8242-da22-423a-94f5-c9f6a776d137": {
+    "identifier": "HB 3809",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on 9/1/25",
+    "latest_date": "2025-05-29",
+    "title": "Relating to the removal of battery energy storage facilities.",
+    "url": ""
+  },
+  "ocd-bill/f85f8b35-3910-4fe1-a303-a5e39e157aae": {
+    "identifier": "SB 3683",
+    "jurisdiction": "Illinois",
+    "latest_action": "Rule 3-9(a) / Re-referred to Assignments",
+    "latest_date": "2026-05-22",
+    "title": "CRIM CD-UNLAW POSSESS WEAPONS",
+    "url": ""
+  },
+  "ocd-bill/f8ac8579-46c3-47f8-8b4e-962b610f74cd": {
+    "identifier": "HB 351",
+    "jurisdiction": "Maryland",
+    "latest_action": "Approved by the Governor - Chapter 603",
+    "latest_date": "2025-05-20",
+    "title": "Creation of a State Debt - Maryland Consolidated Capital Bond Loan of 2025, and the Maryland Consolidated Capital Bond Loans of 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, and 2024",
+    "url": ""
+  },
+  "ocd-bill/f907204d-2c3f-4662-9ad4-7f3d5e8856ee": {
+    "identifier": "HB 71",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective immediately",
+    "latest_date": "2019-05-24",
+    "title": "Relating to the creation of regional transit authorities; granting the power of eminent domain; providing authority to issue bonds and charge fees; creating a criminal offense.",
+    "url": ""
+  },
+  "ocd-bill/f93a181c-84c9-44cf-8024-0c9a924be45f": {
+    "identifier": "H 4450",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "New draft substituted, see H4940",
+    "latest_date": "2024-07-30",
+    "title": "An Act concerning the safety of school children embarking and disembarking school buses",
+    "url": ""
+  },
+  "ocd-bill/f988f79d-b9dd-470e-b57e-8398e6bdea54": {
+    "identifier": "HB 2822",
+    "jurisdiction": "Texas",
+    "latest_action": "Left pending in committee",
+    "latest_date": "2025-05-08",
+    "title": "Relating to the stopping, standing, or parking of a vehicle in a parking space designated as an electric vehicle charging station.",
+    "url": ""
+  },
+  "ocd-bill/f9a86cd4-b7b0-4205-9b86-5abfadec3c25": {
+    "identifier": "SB 321",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/28 at 12:00 p.m.",
+    "latest_date": "2025-02-14",
+    "title": "Budget Reconciliation and Financing Act of 2025",
+    "url": ""
+  },
+  "ocd-bill/fb5a14d2-54a4-40be-bf93-18dc77a49e88": {
+    "identifier": "HB 173",
+    "jurisdiction": "Ohio",
+    "latest_action": "Veto receipt",
+    "latest_date": "2026-06-25T04:00:00+00:00",
+    "title": "Regards entities providing behind-the-meter utility services",
+    "url": ""
+  },
+  "ocd-bill/fbf2cc0f-4baa-4398-b729-d1858f04d098": {
+    "identifier": "HB 18",
+    "jurisdiction": "Ohio",
+    "latest_action": "Refer to Committee",
+    "latest_date": "2021-02-04",
+    "title": "Repeal HB 6 of the 133rd GA",
+    "url": ""
+  },
+  "ocd-bill/fc27ffdc-f2af-4665-a830-ae0e70f3329f": {
+    "identifier": "HB 74",
+    "jurisdiction": "Texas",
+    "latest_action": "Filed",
+    "latest_date": "2025-08-15",
+    "title": "Relating to the authority of a political subdivision to use public money for an environmental project.",
+    "url": ""
+  },
+  "ocd-bill/fd183a04-7ead-4935-bd29-4ca9a4c5cdc3": {
+    "identifier": "HB 3229",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on 9/1/25",
+    "latest_date": "2025-05-29",
+    "title": "Relating to recycling of certain renewable energy components; authorizing an administrative penalty.",
+    "url": ""
+  },
+  "ocd-bill/fd1ec7da-addd-4ea0-8ccf-8e41ff4dc012": {
+    "identifier": "SB 1405",
+    "jurisdiction": "Texas",
+    "latest_action": "Effective on . . . . . . . . . . . . . . .",
+    "latest_date": "2025-06-20",
+    "title": "Relating to increasing access to and reducing taxation of Internet services.",
+    "url": ""
+  },
+  "ocd-bill/fd46fff0-e513-4187-a063-a4788362d5d3": {
+    "identifier": "HB 66",
+    "jurisdiction": "Maryland",
+    "latest_action": "Hearing 2/10 at 1:00 p.m.",
+    "latest_date": "2026-01-19",
+    "title": "Environment - Regional Greenhouse Gas Initiative - Withdrawal (Restoring Energy Freedom Act)",
+    "url": ""
+  },
+  "ocd-bill/ff59238b-8b09-4371-a51e-b78e50e35a61": {
+    "identifier": "SB 1894",
+    "jurisdiction": "Texas",
+    "latest_action": "Referred to Transportation",
+    "latest_date": "2023-03-20",
+    "title": "Relating to the operation of vehicles transporting iron or steel products; authorizing a fee.",
+    "url": ""
+  }
+}
