@@ -75,7 +75,7 @@ SEARCH_TERMS = [
 SIGNIFICANT_KEYWORDS = [
     "signed by governor", "signed into law", "enacted", "adopted",
     "passed both", "concurred in", "sent to governor", "vetoed",
-    "public act", "chaptered",
+    "public act", "chaptered", "substituted by", "substituted for",
 ]
 COMMITTEE_KEYWORDS = [
     "referred to committee", "reported out of committee", "reported favorably",
