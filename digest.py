@@ -1,17 +1,34 @@
+"""
+EA Legislative Tracker
+-----------------------
+Unlike digest.py (which only catches things reporters happen to write about),
+this script queries actual legislative data via the Open States API
+(https://openstates.org — free, covers all 50 states) and diffs it against
+what we saw last run, so we catch:
+
+  - Brand-new bill filings matching our keyword list
+  - Committee action (referred, reported out, amended, hearing scheduled)
+  - Floor votes / passage / signature — flagged as "significant" and
+    triggers an immediate email rather than waiting for the daily digest
+  - Bills related/similar to ones we're already tracking
+  - Federal bills (House/Senate) via Congress.gov, filtered by keyword match
+    against titles since Congress.gov has no full-text search endpoint
+
+State is persisted in data/bill_state.json, which this script updates and
+the GitHub Actions workflow commits back to the repo after every run.
+"""
+
 import requests
 import json
-import xml.etree.ElementTree as ET
-import smtplib
-import re
-import html
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from email.utils import parsedate_to_datetime
-from datetime import datetime, timedelta, timezone
 import os
 import sys
+import time
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from datetime import datetime, timedelta
 
-# ── Configuration ──────────────────────────────────────────────────────────────
+# ── Configuration ──────────────────────────────────────────────────────────
 SENDER = "emma@thinkjet.io"
 RECIPIENTS = [
     "jefferson@thinkjet.io",
@@ -20,251 +37,378 @@ RECIPIENTS = [
     "emma@thinkjet.io",
 ]
 GMAIL_APP_PASSWORD = os.environ["GMAIL_APP_PASSWORD"]
+OPENSTATES_API_KEY = os.environ["OPENSTATES_API_KEY"]
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")  # optional but recommended
 
-RSS_FEEDS = [
-    "https://electrek.co/feed/",
-    "https://electrek.co/tag/ev-charging/feed/",
-    "https://electrek.co/tag/electrify-america/feed/",
-    "https://electrek.co/tag/nevi/feed/",
-    "https://electrek.co/tag/electric-vehicle/feed/",
-]
+STATE_STORE_PATH = "data/bill_state.json"
+OPENSTATES_BASE = "https://v3.openstates.org"
+CONGRESS_API_KEY = os.environ.get("CONGRESS_API_KEY")
+CONGRESS_BASE = "https://api.congress.gov/v3"
+CURRENT_CONGRESS = 119  # 119th Congress covers 2025-2026; bump to 120 starting Jan 2027
 
-STATES = {
-    "massachusetts": "MA",
-    "new jersey":    "NJ",
-    "new york":      "NY",
-    "pennsylvania":  "PA",
-    "maryland":      "MD",
-    "virginia":      "VA",
-    "utah":          "UT",
-    "colorado":      "CO",
-    "texas":         "TX",
-    "washington":    "WA",
-    "illinois":      "IL",
-    "ohio":          "OH",
-}
-
-STATE_ORDER = [
+STATES = [
     "Massachusetts", "New Jersey", "New York", "Pennsylvania",
     "Maryland", "Virginia", "Utah", "Colorado",
     "Texas", "Washington", "Illinois", "Ohio",
 ]
 
-POLICY_AREAS = [
-    (["nevi", "national electric vehicle infrastructure"],          "EV Charging Funding / NEVI"),
-    (["ev charging fund", "charging grant", "charging investment",
-      "charging infrastructure fund"],                              "EV Charging Funding"),
-    (["low carbon fuel", "lcfs"],                                   "LCFS"),
-    (["kwh tax", "kilowatt-hour tax", "charging tax", "sales tax"], "kWh Tax"),
-    (["grid reliability", "interconnection", "demand charge",
-      "time-of-use", "utility commission"],                         "Grid Reliability"),
-    (["road use charge", "vmt fee", "vehicle miles traveled",
-      "mileage fee"],                                               "Road Use Charges"),
-    (["roi cap", "return on investment", "profit cap"],             "NEVI ROI Caps"),
-    (["evtip", "ev infrastructure training", "technician certif"],  "EVTIP"),
-    (["ada", "accessibility", "accessible"],                        "ADA Compliance"),
-    (["data sharing", "usage data", "charging data"],               "Data Sharing"),
-    (["uptime", "reliability report", "availability report"],       "Reliability & Uptime"),
-    (["vandal", "theft", "cable cut"],                              "Vandalism"),
-    (["parking requirement", "parking spaces", "parking code"],     "Parking % Requirements"),
-    (["registration fee", "ev fee", "ev surcharge"],                "EV Registration Fees"),
-    (["emergency stop", "nec code", "national electrical code"],    "Emergency Stop Button/NEC"),
-    (["permit", "permitting", "building code", "zoning"],           "Permit Expediting"),
-    (["battery storage", "fire safety", "fire code", "bess",
-      "energy storage"],                                            "Battery Storage/Fire Safety"),
-    (["electrify america"],                                         "EA Network"),
+# Keyword list used to locally filter each state's recently-updated bills
+# (title + abstract text). Add/remove terms here as EA's priorities shift —
+# no code changes needed elsewhere.
+SEARCH_TERMS = [
+    "electric vehicle charging",
+    "electric vehicle supply equipment",
+    "EVSE",
+    "make-ready parking",
+    "NEVI",
+    "electric vehicle infrastructure",
+    "charging station",
+    "kilowatt-hour tax",
+    "vehicle miles traveled fee",
+    "road usage charge",
+    "EV registration fee",
+    "battery energy storage",
+    "electric vehicle accessibility",
+]
+
+# Action-description keyword buckets used to classify how big a deal an update is.
+SIGNIFICANT_KEYWORDS = [
+    "signed by governor", "signed into law", "enacted", "adopted",
+    "passed both", "concurred in", "sent to governor", "vetoed",
+    "public act", "chaptered",
+]
+COMMITTEE_KEYWORDS = [
+    "referred to committee", "reported out of committee", "reported favorably",
+    "committee substitute", "hearing scheduled", "amended", "reported with amendments",
+    "passed committee", "recommended for passage",
 ]
 
 
-def strip_html(text: str) -> str:
-    text = re.sub(r"<[^>]+>", " ", text)
-    return html.unescape(text).strip()
+def load_state() -> dict:
+    if os.path.exists(STATE_STORE_PATH):
+        with open(STATE_STORE_PATH) as f:
+            return json.load(f)
+    return {}
 
 
-def fetch_rss(url: str) -> str | None:
+def save_state(state: dict) -> None:
+    os.makedirs(os.path.dirname(STATE_STORE_PATH), exist_ok=True)
+    with open(STATE_STORE_PATH, "w") as f:
+        json.dump(state, f, indent=2, sort_keys=True)
+
+
+def openstates_recent(jurisdiction: str, per_page: int = 40) -> list[dict]:
+    """
+    One request per state instead of one-per-keyword. Pulls the most recently
+    updated bills (with abstracts, so we can keyword-match against more than
+    just the title) and we filter locally — this is what keeps us well under
+    Open States' free-tier limits (1 req/sec, 500/day) even running hourly.
+    """
+    url = f"{OPENSTATES_BASE}/bills"
+    params = {
+        "jurisdiction": jurisdiction,
+        "sort": "updated_desc",
+        "include": "actions,abstracts",
+        "per_page": per_page,
+        "apikey": OPENSTATES_API_KEY,
+    }
     try:
-        r = requests.get(url, timeout=20, headers={"User-Agent": "Mozilla/5.0"})
+        r = requests.get(url, params=params, timeout=30)
         r.raise_for_status()
-        return r.text
+        return r.json().get("results", [])
     except Exception as e:
-        print(f"  WARNING: could not fetch {url}: {e}", file=sys.stderr)
+        print(f"  WARNING: Open States query failed ({jurisdiction}): {e}", file=sys.stderr)
+        return []
+
+
+def bill_matches_keywords(bill: dict) -> bool:
+    blob = (bill.get("title") or "").lower()
+    for abstract in bill.get("abstracts") or []:
+        blob += " " + (abstract.get("abstract") or "").lower()
+    return any(term.lower() in blob for term in SEARCH_TERMS)
+
+
+def classify_action(description: str) -> str:
+    d = (description or "").lower()
+    if any(k in d for k in SIGNIFICANT_KEYWORDS):
+        return "significant"
+    if any(k in d for k in COMMITTEE_KEYWORDS):
+        return "committee"
+    return "minor"
+
+
+def double_check_with_claude(bill: dict) -> str | None:
+    """
+    Verification pass: ask Claude to summarize the bill using ONLY the
+    structured data we actually pulled, explicitly forbidding invented
+    details (bill numbers, sponsors, outcomes not present in the data).
+    This is the "double check" step before anything goes in an alert email.
+    """
+    if not ANTHROPIC_API_KEY:
+        return None
+    prompt = (
+        "You are fact-checking a legislative alert before it goes to a client. "
+        "Using ONLY the structured data below, write a 2-3 sentence plain-English "
+        "summary of what this bill does and its current status. Do not invent bill "
+        "numbers, sponsors, dates, or outcomes that are not present in the data. "
+        "If the data is too sparse to describe what the bill actually does, say so "
+        "explicitly rather than guessing.\n\n"
+        f"Bill data: {json.dumps(bill, indent=2)[:4000]}"
+    )
+    try:
+        r = requests.post(
+            "https://api.anthropic.com/v1/messages",
+            headers={
+                "x-api-key": ANTHROPIC_API_KEY,
+                "anthropic-version": "2023-06-01",
+                "content-type": "application/json",
+            },
+            json={
+                "model": "claude-sonnet-5",
+                "max_tokens": 300,
+                "messages": [{"role": "user", "content": prompt}],
+            },
+            timeout=30,
+        )
+        r.raise_for_status()
+        content = r.json().get("content", [])
+        return "".join(block.get("text", "") for block in content).strip() or None
+    except Exception as e:
+        print(f"  WARNING: Claude double-check failed: {e}", file=sys.stderr)
         return None
 
 
-def detect_states(blob: str) -> list[str]:
-    found = []
-    for name in STATES:
-        if re.search(r'\b' + re.escape(name) + r'\b', blob):
-            found.append(name.title())
-    return found
-
-
-def detect_policy_area(blob: str) -> str:
-    for keywords, label in POLICY_AREAS:
-        if any(kw in blob for kw in keywords):
-            return label
-    return "EV Charging"
-
-
-def parse_recent_articles(xml_content: str, days: int = 7) -> list[dict]:
-    articles = []
-    cutoff = datetime.now(timezone.utc) - timedelta(days=days)
-    try:
-        root = ET.fromstring(xml_content)
-        for item in root.findall(".//item"):
-            title        = strip_html(item.findtext("title", ""))
-            link         = item.findtext("link", "").strip()
-            description  = strip_html(item.findtext("description", ""))
-            pub_date_str = item.findtext("pubDate", "")
-
-            try:
-                pub_date = parsedate_to_datetime(pub_date_str)
-                if pub_date.tzinfo is None:
-                    pub_date = pub_date.replace(tzinfo=timezone.utc)
-                if pub_date < cutoff:
-                    continue
-            except Exception:
-                pass
-
-            blob = f"{title} {description}".lower()
-
-            states_found = detect_states(blob)
-            is_national = any(kw in blob for kw in [
-                "electrify america", "nevi", "federal", "fhwa", "doe ", "congress",
-                "nationwide", "national", "h.r.", "senate", "house bill",
-            ])
-
-            if not states_found and not is_national:
-                continue
-
-            policy_area = detect_policy_area(blob)
-            summary = description[:300].rstrip() + ("…" if len(description) > 300 else "")
-
-            articles.append({
-                "title":       title,
-                "link":        link,
-                "summary":     summary,
-                "states":      states_found,
-                "national":    is_national,
-                "policy_area": policy_area,
-                "date":        pub_date_str,
-            })
-    except Exception as e:
-        print(f"  WARNING: RSS parse error: {e}", file=sys.stderr)
-    return articles
-
-
-def load_tracked_bills() -> dict:
-    """Pulls the current legislative tracker snapshot (updated by bill_tracker.py)
-    so the daily digest shows ongoing bill status, not just news mentions."""
-    try:
-        with open("data/bill_state.json") as f:
-            return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return {}
-
-
-def build_legislative_snapshot(bill_state: dict) -> list[str]:
-    if not bill_state:
+def find_similar_bills(bill: dict, all_results: list[dict]) -> list[str]:
+    """Other bills in the same state/session sharing a subject tag with this one."""
+    subjects = set(bill.get("subject") or [])
+    if not subjects:
         return []
-    by_state: dict[str, list[dict]] = {}
-    for record in bill_state.values():
-        by_state.setdefault(record["jurisdiction"], []).append(record)
-
-    lines = ["", "ACTIVE LEGISLATION TRACKER (all bills currently being watched)"]
-    for state in STATE_ORDER:
-        bills = by_state.get(state, [])
-        if not bills:
+    similar = []
+    for other in all_results:
+        if other["id"] == bill["id"]:
             continue
-        lines.append(f"{state}:")
-        for b in sorted(bills, key=lambda x: x.get("latest_date", ""), reverse=True):
-            lines.append(f"  {b['identifier']} — {b['title'][:80]}")
-            lines.append(f"    Status: {b['latest_action']} ({b['latest_date']})")
-    lines.append("")
-    return lines
+        if subjects & set(other.get("subject") or []):
+            similar.append(f"{other.get('identifier', '?')}: {other.get('title', '')}")
+    return similar[:3]
 
 
-def build_email_body(articles: list[dict], today: str) -> str:
-    by_state: dict[str, list[dict]] = {s: [] for s in STATE_ORDER}
-    national: list[dict] = []
+def congress_recent_bills(hours_back: int = 6) -> list[dict]:
+    """
+    Congress.gov's API has no full-text keyword search endpoint (that only
+    exists on the website), so instead we pull bills updated in the lookback
+    window and filter by title keyword match locally — same principle as the
+    state search, adapted to what the API actually offers.
+    """
+    if not CONGRESS_API_KEY:
+        return []
+    from_dt = (datetime.utcnow() - timedelta(hours=hours_back)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    url = f"{CONGRESS_BASE}/bill/{CURRENT_CONGRESS}"
+    params = {
+        "api_key": CONGRESS_API_KEY,
+        "format": "json",
+        "sort": "updateDate+desc",
+        "fromDateTime": from_dt,
+        "limit": 250,
+    }
+    try:
+        r = requests.get(url, params=params, timeout=30)
+        r.raise_for_status()
+        bills = r.json().get("bills", [])
+    except Exception as e:
+        print(f"  WARNING: Congress.gov query failed: {e}", file=sys.stderr)
+        return []
 
-    for a in articles:
-        placed = False
-        for state in a["states"]:
-            if state in by_state:
-                by_state[state].append(a)
-                placed = True
-        if a["national"]:
-            national.append(a)
+    matches = []
+    for b in bills:
+        title = (b.get("title") or "").lower()
+        if any(term.lower() in title for term in SEARCH_TERMS):
+            matches.append(b)
+    return matches
 
-    lines = [f"Team — here is your Electrify America policy and regulatory digest for {today}.", ""]
 
-    for state in STATE_ORDER:
-        items = by_state[state]
-        if items:
-            lines.append(f"{state.upper()} 🔴 ACTIVE")
-            for a in items:
-                note = ""
-                if a["policy_area"] == "Emergency Stop Button/NEC":
-                    note = " ⚠️ NOTE: EA's position is that emergency stop access should be for FIRST RESPONDERS ONLY."
-                if a["policy_area"] == "Battery Storage/Fire Safety" and state == "Texas":
-                    note = " ⚠️ HIGH PRIORITY"
-                lines.append(f"[{a['policy_area']}]{note} {a['title']}")
-                lines.append(f"  {a['summary']}")
-                lines.append(f"  Source: {a['link']}")
-        else:
-            lines.append(f"{state.upper()} — No significant developments today.")
+def federal_record(bill: dict) -> dict:
+    bill_type = (bill.get("type") or "").upper()
+    number = bill.get("number", "")
+    congress = bill.get("congress", CURRENT_CONGRESS)
+    latest_action = bill.get("latestAction", {}) or {}
+    chamber = "house-bill" if bill_type.startswith("H") else "senate-bill"
+    return {
+        "identifier": f"{bill_type}{number}",
+        "title": bill.get("title", ""),
+        "jurisdiction": "U.S. Congress",
+        "latest_action": latest_action.get("text", ""),
+        "latest_date": latest_action.get("actionDate", ""),
+        "url": f"https://www.congress.gov/bill/{congress}th-congress/{chamber}/{number}",
+    }
+
+
+def scan_federal_bills(state_store: dict) -> tuple[list[dict], list[dict]]:
+    new_filings = []
+    status_changes = []
+
+    if not CONGRESS_API_KEY:
+        return new_filings, status_changes
+
+    for bill in congress_recent_bills():
+        bill_type = (bill.get("type") or "").upper()
+        number = bill.get("number", "")
+        congress = bill.get("congress", CURRENT_CONGRESS)
+        key = f"congress-{congress}-{bill_type}-{number}"
+        record = federal_record(bill)
+
+        prior = state_store.get(key)
+        if prior is None:
+            summary = double_check_with_claude(record)
+            new_filings.append({**record, "similar": [], "verified_summary": summary,
+                                 "level": classify_action(record["latest_action"])})
+        elif prior.get("latest_date") != record["latest_date"]:
+            summary = double_check_with_claude(record)
+            status_changes.append({**record, "previous_action": prior.get("latest_action", ""),
+                                    "verified_summary": summary,
+                                    "level": classify_action(record["latest_action"])})
+
+        state_store[key] = record
+
+    return new_filings, status_changes
+
+
+def scan_state_bills(state_store: dict) -> tuple[list[dict], list[dict]]:
+    new_filings = []
+    status_changes = []
+
+    for state_name in STATES:
+        all_results = openstates_recent(state_name)
+        jurisdiction_results = [b for b in all_results if bill_matches_keywords(b)]
+        time.sleep(1.1)  # stay comfortably under the 1 request/sec free-tier limit
+
+        for bill in jurisdiction_results:
+            bill_id = bill["id"]
+            actions = bill.get("actions") or []
+            latest_action = actions[-1] if actions else {}
+            latest_desc = latest_action.get("description", "")
+            latest_date = latest_action.get("date", "")
+
+            record = {
+                "identifier": bill.get("identifier", "unknown"),
+                "title": bill.get("title", ""),
+                "jurisdiction": state_name,
+                "latest_action": latest_desc,
+                "latest_date": latest_date,
+                "url": (bill.get("sources") or [{}])[0].get("url", ""),
+            }
+
+            prior = state_store.get(bill_id)
+
+            if prior is None:
+                similar = find_similar_bills(bill, all_results)
+                summary = double_check_with_claude(record)
+                new_filings.append({
+                    **record,
+                    "similar": similar,
+                    "verified_summary": summary,
+                    "level": classify_action(latest_desc),
+                })
+            elif prior.get("latest_date") != latest_date:
+                summary = double_check_with_claude(record)
+                status_changes.append({
+                    **record,
+                    "previous_action": prior.get("latest_action", ""),
+                    "verified_summary": summary,
+                    "level": classify_action(latest_desc),
+                })
+
+            state_store[bill_id] = record
+
+    return new_filings, status_changes
+
+
+def build_alert_email(new_filings: list[dict], status_changes: list[dict]) -> str:
+    lines = ["Team — legislative tracker update.", ""]
+
+    urgent = [b for b in status_changes if b["level"] == "significant"]
+    if urgent:
+        lines.append("SIGNIFICANT ACTION")
+        for b in urgent:
+            lines.append(f"[{b['jurisdiction']}] {b['identifier']} — {b['title']}")
+            lines.append(f"  Previous: {b['previous_action']}")
+            lines.append(f"  Now: {b['latest_action']} ({b['latest_date']})")
+            if b.get("verified_summary"):
+                lines.append(f"  Summary: {b['verified_summary']}")
+            lines.append(f"  Source: {b['url']}")
+            lines.append("")
+
+    if new_filings:
+        lines.append("NEWLY FILED")
+        for b in new_filings:
+            lines.append(f"[{b['jurisdiction']}] {b['identifier']} — {b['title']}")
+            lines.append(f"  Status: {b['latest_action']} ({b['latest_date']})")
+            if b.get("similar"):
+                lines.append(f"  Related bills: {', '.join(b['similar'])}")
+            if b.get("verified_summary"):
+                lines.append(f"  Summary: {b['verified_summary']}")
+            lines.append(f"  Source: {b['url']}")
+            lines.append("")
+
+    committee = [b for b in status_changes if b["level"] == "committee"]
+    if committee:
+        lines.append("COMMITTEE / PROCEDURAL MOVEMENT")
+        for b in committee:
+            lines.append(f"[{b['jurisdiction']}] {b['identifier']} — {b['title']}")
+            lines.append(f"  {b['previous_action']} -> {b['latest_action']} ({b['latest_date']})")
+            lines.append(f"  Source: {b['url']}")
+            lines.append("")
+
+    minor = [b for b in status_changes if b["level"] == "minor"]
+    if minor:
+        lines.append("OTHER MOVEMENT")
+        for b in minor:
+            lines.append(f"[{b['jurisdiction']}] {b['identifier']} — {b['latest_action']} ({b['latest_date']})")
         lines.append("")
 
-    lines.append("NATIONAL")
-    if national:
-        for a in national:
-            lines.append(f"[{a['policy_area']}] {a['title']}")
-            lines.append(f"  {a['summary']}")
-            lines.append(f"  Source: {a['link']}")
-    else:
-        lines.append("No significant national developments today.")
-    lines.append("")
-    lines.extend(build_legislative_snapshot(load_tracked_bills()))
     lines.append("—")
-    lines.append("Prepared by ThinkJet monitoring tools for Electrify America.")
-    lines.append("Policy areas monitored: EV Charging Funding, LCFS, kWh Tax, Grid Reliability, Road Use Charges, NEVI ROI Caps, EVTIP, ADA, Data Sharing, Reliability/Uptime, Vandalism, Parking %, EV Reg Fees, Emergency Stop Button/NEC, Permit Expediting, Battery Storage/Fire Safety.")
-    lines.append("States monitored: MA, NJ, NY, PA, MD, VA, UT, CO, TX, WA, IL, OH.")
-
+    lines.append("Automated legislative tracker (sources: Open States, Congress.gov). Verify bill text directly before external use.")
     return "\n".join(lines)
 
 
 def send_email(subject: str, body: str) -> None:
     msg = MIMEMultipart()
-    msg["From"]    = SENDER
-    msg["To"]      = ", ".join(RECIPIENTS)
+    msg["From"] = SENDER
+    msg["To"] = ", ".join(RECIPIENTS)
     msg["Subject"] = subject
     msg.attach(MIMEText(body, "plain"))
-
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
         server.login(SENDER, GMAIL_APP_PASSWORD)
         server.sendmail(SENDER, RECIPIENTS, msg.as_string())
-    print("✓ Email sent successfully.")
+    print("Alert email sent.")
 
 
 def main():
-    today = datetime.now().strftime("%B %-d, %Y")
-    print(f"Running digest for {today}...")
+    print("Scanning state legislative bills via Open States...")
+    state_store = load_state()
+    new_filings, status_changes = scan_state_bills(state_store)
 
-    all_articles: list[dict] = []
-    for feed in RSS_FEEDS:
-        xml = fetch_rss(feed)
-        if xml:
-            found = parse_recent_articles(xml)
-            print(f"  {feed}: {len(found)} relevant articles")
-            all_articles.extend(found)
+    print("Scanning federal bills via Congress.gov...")
+    fed_new, fed_changes = scan_federal_bills(state_store)
+    new_filings.extend(fed_new)
+    status_changes.extend(fed_changes)
 
-    seen: set[str] = set()
-    unique = [a for a in all_articles if not (a["link"] in seen or seen.add(a["link"]))]
-    print(f"Total unique articles: {len(unique)}")
+    save_state(state_store)
+    print(f"New filings: {len(new_filings)} | Status changes: {len(status_changes)}")
 
-    body    = build_email_body(unique, today)
-    subject = f"Electrify America Policy & Regulatory Digest — {today}"
+    if not new_filings and not status_changes:
+        print("No changes detected — no email sent.")
+        return
+
+    today = datetime.now().strftime("%B %-d, %Y %I:%M %p")
+    body = build_alert_email(new_filings, status_changes)
+
+    subject_bits = []
+    if any(b["level"] == "significant" for b in status_changes):
+        subject_bits.append("SIGNIFICANT ACTION")
+    if new_filings:
+        subject_bits.append(f"{len(new_filings)} new filing(s)")
+    tag = ", ".join(subject_bits) if subject_bits else "update"
+    subject = f"EA Legislative Alert — {tag} — {today}"
 
     send_email(subject, body)
 
