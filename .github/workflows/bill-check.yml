@@ -1,0 +1,43 @@
+name: Electrify America Legislative Alert
+
+on:
+  schedule:
+    # ~8am / 11am / 2pm / 5pm Eastern, weekdays (UTC times below assume EDT;
+    # shift by 1 hour Nov-Mar when clocks fall back, same as daily-digest.yml)
+    - cron: '0 12,15,18,21 * * 1-5'
+  workflow_dispatch:   # manual "Run workflow" button in GitHub
+
+permissions:
+  contents: write   # needed to commit updated bill_state.json back to the repo
+
+jobs:
+  check-bills:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run legislative tracker
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          OPENSTATES_API_KEY: ${{ secrets.OPENSTATES_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+        run: python bill_tracker.py
+
+      - name: Commit updated bill tracking state
+        run: |
+          git config user.name "ea-digest-bot"
+          git config user.email "actions@github.com"
+          git add data/bill_state.json
+          git diff --staged --quiet || git commit -m "Update bill tracking state [skip ci]"
+          git push
