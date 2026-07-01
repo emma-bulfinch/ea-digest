@@ -97,7 +97,7 @@ def save_state(state: dict) -> None:
         json.dump(state, f, indent=2, sort_keys=True)
 
 
-def openstates_recent(jurisdiction: str, per_page: int = 40) -> list[dict]:
+def openstates_recent(jurisdiction: str, per_page: int = 20) -> list[dict]:
     """
     One request per state instead of one-per-keyword. Pulls the most recently
     updated bills (with abstracts, so we can keyword-match against more than
@@ -112,13 +112,22 @@ def openstates_recent(jurisdiction: str, per_page: int = 40) -> list[dict]:
         "per_page": per_page,
         "apikey": OPENSTATES_API_KEY,
     }
-    try:
-        r = requests.get(url, params=params, timeout=30)
-        r.raise_for_status()
-        return r.json().get("results", [])
-    except Exception as e:
-        print(f"  WARNING: Open States query failed ({jurisdiction}): {e}", file=sys.stderr)
-        return []
+    for attempt in (1, 2):
+        try:
+            r = requests.get(url, params=params, timeout=30)
+            r.raise_for_status()
+            return r.json().get("results", [])
+        except requests.exceptions.HTTPError as e:
+            if r.status_code == 429 and attempt == 1:
+                print(f"  Rate limited on {jurisdiction}, waiting 5s and retrying once...", file=sys.stderr)
+                time.sleep(5)
+                continue
+            print(f"  WARNING: Open States query failed ({jurisdiction}): {e}", file=sys.stderr)
+            return []
+        except Exception as e:
+            print(f"  WARNING: Open States query failed ({jurisdiction}): {e}", file=sys.stderr)
+            return []
+    return []
 
 
 def bill_matches_keywords(bill: dict) -> bool:
@@ -279,7 +288,7 @@ def scan_state_bills(state_store: dict) -> tuple[list[dict], list[dict]]:
     for state_name in STATES:
         all_results = openstates_recent(state_name)
         jurisdiction_results = [b for b in all_results if bill_matches_keywords(b)]
-        time.sleep(1.1)  # stay comfortably under the 1 request/sec free-tier limit
+        time.sleep(2.0)  # extra margin under the 1 request/sec free-tier limit
 
         for bill in jurisdiction_results:
             bill_id = bill["id"]
