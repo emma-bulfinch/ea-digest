@@ -1,4 +1,5 @@
 import requests
+import json
 import xml.etree.ElementTree as ET
 import smtplib
 import re
@@ -153,6 +154,36 @@ def parse_recent_articles(xml_content: str, days: int = 7) -> list[dict]:
     return articles
 
 
+def load_tracked_bills() -> dict:
+    """Pulls the current legislative tracker snapshot (updated by bill_tracker.py)
+    so the daily digest shows ongoing bill status, not just news mentions."""
+    try:
+        with open("data/bill_state.json") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def build_legislative_snapshot(bill_state: dict) -> list[str]:
+    if not bill_state:
+        return []
+    by_state: dict[str, list[dict]] = {}
+    for record in bill_state.values():
+        by_state.setdefault(record["jurisdiction"], []).append(record)
+
+    lines = ["", "ACTIVE LEGISLATION TRACKER (all bills currently being watched)"]
+    for state in STATE_ORDER:
+        bills = by_state.get(state, [])
+        if not bills:
+            continue
+        lines.append(f"{state}:")
+        for b in sorted(bills, key=lambda x: x.get("latest_date", ""), reverse=True):
+            lines.append(f"  {b['identifier']} — {b['title'][:80]}")
+            lines.append(f"    Status: {b['latest_action']} ({b['latest_date']})")
+    lines.append("")
+    return lines
+
+
 def build_email_body(articles: list[dict], today: str) -> str:
     by_state: dict[str, list[dict]] = {s: [] for s in STATE_ORDER}
     national: list[dict] = []
@@ -194,6 +225,7 @@ def build_email_body(articles: list[dict], today: str) -> str:
     else:
         lines.append("No significant national developments today.")
     lines.append("")
+    lines.extend(build_legislative_snapshot(load_tracked_bills()))
     lines.append("—")
     lines.append("Prepared by ThinkJet monitoring tools for Electrify America.")
     lines.append("Policy areas monitored: EV Charging Funding, LCFS, kWh Tax, Grid Reliability, Road Use Charges, NEVI ROI Caps, EVTIP, ADA, Data Sharing, Reliability/Uptime, Vandalism, Parking %, EV Reg Fees, Emergency Stop Button/NEC, Permit Expediting, Battery Storage/Fire Safety.")
