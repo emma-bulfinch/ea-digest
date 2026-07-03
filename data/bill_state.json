@@ -6,5 +6,13 @@
     "latest_date": "2026-06-30T04:00:00+00:00",
     "title": "Establishes certain electric vehicle supply equipment development processes and standards concerning public health and safety; removes certain existing approval requirements while preserving applicable safety and inspection standards.",
     "url": "https://openstates.org/nj/bills/222/A4530/"
+  },
+  "ocd-bill/8f566523-beef-4dc0-930b-2431c1139cd8": {
+    "identifier": "A 8543",
+    "jurisdiction": "New York",
+    "latest_action": "PRINT NUMBER 8543A",
+    "latest_date": "2026-02-18",
+    "title": "Allowing new buildings where new parking is provided to have an optional, charger-agnostic, power-based allocation method alternative to certain electric vehicle charging infrastructure requirements",
+    "url": "https://openstates.org/ny/bills/2025-2026/A8543/"
   }
 }
