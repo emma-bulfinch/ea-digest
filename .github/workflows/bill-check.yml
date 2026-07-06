@@ -38,6 +38,6 @@ jobs:
         run: |
           git config user.name "ea-digest-bot"
           git config user.email "actions@github.com"
-          git add data/bill_state.json
+         git add data/bill_state.json data/alert_log.json
           git diff --staged --quiet || git commit -m "Update bill tracking state [skip ci]"
           git push
