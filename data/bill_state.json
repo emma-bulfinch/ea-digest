@@ -14,5 +14,13 @@
     "latest_date": "2026-02-18",
     "title": "Allowing new buildings where new parking is provided to have an optional, charger-agnostic, power-based allocation method alternative to certain electric vehicle charging infrastructure requirements",
     "url": "https://openstates.org/ny/bills/2025-2026/A8543/"
+  },
+  "ocd-bill/cd65c3ac-335e-4bfd-a1f3-438bfb1f00b6": {
+    "identifier": "SB 106",
+    "jurisdiction": "Ohio",
+    "latest_action": "Effective 9/23/26",
+    "latest_date": "2026-09-23T04:00:00+00:00",
+    "title": "Regulate the ownership of electric vehicle charging stations",
+    "url": "https://openstates.org/oh/bills/136/SB106/"
   }
 }
