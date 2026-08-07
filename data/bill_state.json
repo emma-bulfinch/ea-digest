@@ -23,6 +23,14 @@
     "title": "Allowing new buildings where new parking is provided to have an optional, charger-agnostic, power-based allocation method alternative to certain electric vehicle charging infrastructure requirements",
     "url": "https://openstates.org/ny/bills/2025-2026/A8543/"
   },
+  "ocd-bill/b2299c19-2ca8-4b48-b210-c25f68f00791": {
+    "identifier": "H 5641",
+    "jurisdiction": "Massachusetts",
+    "latest_action": "Senate concurred",
+    "latest_date": "2026-08-06",
+    "title": "An Act establishing a temporary moratorium on large scale photovoltaic installations and battery energy storage systems (BESS) in the town of Becket",
+    "url": "https://openstates.org/ma/bills/194th/H5641/"
+  },
   "ocd-bill/cd65c3ac-335e-4bfd-a1f3-438bfb1f00b6": {
     "identifier": "SB 106",
     "jurisdiction": "Ohio",
