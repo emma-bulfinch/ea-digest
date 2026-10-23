@@ -70,5 +70,13 @@
     "latest_date": "2026-09-23T04:00:00+00:00",
     "title": "Regulate the ownership of electric vehicle charging stations",
     "url": "https://openstates.org/oh/bills/136/SB106/"
+  },
+  "ocd-bill/cdd339a6-852f-470c-ac2a-dabc6185a26e": {
+    "identifier": "HB 1133",
+    "jurisdiction": "Virginia",
+    "latest_action": "Continued from last session",
+    "latest_date": "2026-07-21",
+    "title": "Virginia Solar Energy and Battery Energy Storage Systems Program; established.",
+    "url": "https://openstates.org/va/bills/2027/HB1133/"
   }
 }
