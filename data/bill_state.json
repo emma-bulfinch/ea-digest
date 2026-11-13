@@ -86,5 +86,13 @@
     "latest_date": "2026-07-21",
     "title": "Virginia Solar Energy and Battery Energy Storage Systems Program; established.",
     "url": "https://openstates.org/va/bills/2027/HB1133/"
+  },
+  "ocd-bill/f3a29afb-2735-46df-8c31-b755ab386f62": {
+    "identifier": "HB 1125",
+    "jurisdiction": "Texas",
+    "latest_action": "Filed",
+    "latest_date": "2026-11-12",
+    "title": "Relating to the installation of electric vehicle charging stations at certain state-owned parking lots and garages.",
+    "url": "https://openstates.org/tx/bills/90R/HB1125/"
   }
 }
